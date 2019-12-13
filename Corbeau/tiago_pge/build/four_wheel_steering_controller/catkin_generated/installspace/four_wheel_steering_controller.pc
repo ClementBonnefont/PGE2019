@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: four_wheel_steering_controller
+Description: Description of four_wheel_steering_controller
+Version: 0.3.18
+Cflags: -I/home/pge/tiago_pge/install/include
+Libs: -L/home/pge/tiago_pge/install/lib -lfour_wheel_steering_controller
+Requires: controller_interface nav_msgs four_wheel_steering_msgs realtime_tools tf urdf_geometry_parser controller_manager

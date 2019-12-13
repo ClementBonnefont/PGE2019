@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target pylon_world_tf_broadcaster[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pylon_world_tf_broadcaster.dir/src/pylon_world_tf_broadcaster.cpp.o[0m
+[01m[K/home/pge/tiago_pge/src/pylon_world_tf/src/pylon_world_tf_broadcaster.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pge/tiago_pge/src/pylon_world_tf/src/pylon_world_tf_broadcaster.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khnhff[m[K’ was not declared in this scope
+     hnhff
+[01;32m[K     ^[m[K
+CMakeFiles/pylon_world_tf_broadcaster.dir/build.make:62 : la recette pour la cible « CMakeFiles/pylon_world_tf_broadcaster.dir/src/pylon_world_tf_broadcaster.cpp.o » a échouée
+make[2]: *** [CMakeFiles/pylon_world_tf_broadcaster.dir/src/pylon_world_tf_broadcaster.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/pylon_world_tf_broadcaster.dir/all] Erreur 2
+CMakeFiles/Makefile2:707 : la recette pour la cible « CMakeFiles/pylon_world_tf_broadcaster.dir/all » a échouée
+Makefile:138 : la recette pour la cible « all » a échouée
+make: *** [all] Erreur 2

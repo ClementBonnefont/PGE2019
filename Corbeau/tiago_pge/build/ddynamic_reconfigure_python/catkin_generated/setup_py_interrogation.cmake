@@ -1,0 +1,6 @@
+set(ddynamic_reconfigure_python_SETUP_PY_VERSION "0.0.1")
+set(ddynamic_reconfigure_python_SETUP_PY_SCRIPTS "")
+set(ddynamic_reconfigure_python_SETUP_PY_PACKAGES "ddynamic_reconfigure_python")
+set(ddynamic_reconfigure_python_SETUP_PY_PACKAGE_DIRS "src/ddynamic_reconfigure_python")
+set(ddynamic_reconfigure_python_SETUP_PY_MODULES "")
+set(ddynamic_reconfigure_python_SETUP_PY_MODULE_DIRS "")

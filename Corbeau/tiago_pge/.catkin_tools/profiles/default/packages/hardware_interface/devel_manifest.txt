@@ -1,0 +1,5 @@
+ros_control/hardware_interface
+/home/pge/tiago_pge/devel/.private/hardware_interface/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
+/home/pge/tiago_pge/devel/.private/hardware_interface/lib/pkgconfig/hardware_interface.pc /home/pge/tiago_pge/devel/lib/pkgconfig/hardware_interface.pc
+/home/pge/tiago_pge/devel/.private/hardware_interface/share/hardware_interface/cmake/hardware_interfaceConfig.cmake /home/pge/tiago_pge/devel/share/hardware_interface/cmake/hardware_interfaceConfig.cmake
+/home/pge/tiago_pge/devel/.private/hardware_interface/share/hardware_interface/cmake/hardware_interfaceConfig-version.cmake /home/pge/tiago_pge/devel/share/hardware_interface/cmake/hardware_interfaceConfig-version.cmake

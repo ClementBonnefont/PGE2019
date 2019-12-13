@@ -1,0 +1,9 @@
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/edit_cache.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/download_extra_data.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/rebuild_cache.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/doxygen.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/install.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/list_install_components.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/_catkin_empty_exported_target.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/install/local.dir
+/home/pge/tiago_pge/build/play_with_sensors/CMakeFiles/install/strip.dir

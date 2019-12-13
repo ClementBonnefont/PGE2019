@@ -1,0 +1,10 @@
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_attachment.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_underactuated_finger.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_pal_hand.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_harness.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_world_odometry.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_wifi_ap.so
+Symlinking /home/pge/tiago_pge/devel/lib/libgazebo_ros_forcetorque.so
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/pal_gazebo_plugins.pc
+Symlinking /home/pge/tiago_pge/devel/share/pal_gazebo_plugins/cmake/pal_gazebo_pluginsConfig.cmake
+Symlinking /home/pge/tiago_pge/devel/share/pal_gazebo_plugins/cmake/pal_gazebo_pluginsConfig-version.cmake

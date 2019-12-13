@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/tiago_controller_configuration
+
+Name: tiago_controller_configuration
+Description: Description of tiago_controller_configuration
+Version: 2.0.35
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/tiago_controller_configuration/lib 
+Requires: 

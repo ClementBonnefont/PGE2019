@@ -1,0 +1,6 @@
+set(pal_python_SETUP_PY_VERSION "0.9.14")
+set(pal_python_SETUP_PY_SCRIPTS "")
+set(pal_python_SETUP_PY_PACKAGES "pal_python")
+set(pal_python_SETUP_PY_PACKAGE_DIRS "src/pal_python")
+set(pal_python_SETUP_PY_MODULES "")
+set(pal_python_SETUP_PY_MODULE_DIRS "")

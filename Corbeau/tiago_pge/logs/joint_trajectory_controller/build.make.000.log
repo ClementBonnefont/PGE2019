@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target joint_trajectory_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/pge/tiago_pge/devel/.private/joint_trajectory_controller/lib/libjoint_trajectory_controller.so[0m
+[100%] Built target joint_trajectory_controller

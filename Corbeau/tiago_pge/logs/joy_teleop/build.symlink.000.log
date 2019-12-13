@@ -1,0 +1,4 @@
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/joy_teleop.pc
+Symlinking /home/pge/tiago_pge/devel/lib/joy_teleop/incrementer_server
+Symlinking /home/pge/tiago_pge/devel/share/joy_teleop/cmake/joy_teleopConfig-version.cmake
+Symlinking /home/pge/tiago_pge/devel/share/joy_teleop/cmake/joy_teleopConfig.cmake

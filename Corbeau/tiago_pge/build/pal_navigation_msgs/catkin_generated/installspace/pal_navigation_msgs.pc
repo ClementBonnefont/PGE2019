@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: pal_navigation_msgs
+Description: Description of pal_navigation_msgs
+Version: 0.12.13
+Cflags: -I/home/pge/tiago_pge/install/include
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: message_runtime nav_msgs actionlib_msgs sensor_msgs geometry_msgs

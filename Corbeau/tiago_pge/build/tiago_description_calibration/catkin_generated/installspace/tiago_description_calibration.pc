@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: tiago_description_calibration
+Description: Description of tiago_description_calibration
+Version: 0.0.6
+Cflags: 
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: 

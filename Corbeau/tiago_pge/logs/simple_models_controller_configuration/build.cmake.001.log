@@ -1,0 +1,13 @@
+Not searching for unused variables given on the command line.
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/pge/tiago_pge/devel/.private/simple_models_controller_configuration
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/pge/tiago_pge/devel;/opt/ros/kinetic
+[36m--[0m This workspace overlays: /home/pge/tiago_pge/devel;/opt/ros/kinetic
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python
+[36m--[0m Using Debian Python package layout
+[36m--[0m Using empy: /usr/bin/empy
+[36m--[0m Using CATKIN_ENABLE_TESTING: 0
+[36m--[0m catkin 0.7.18
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /home/pge/tiago_pge/build/simple_models_controller_configuration

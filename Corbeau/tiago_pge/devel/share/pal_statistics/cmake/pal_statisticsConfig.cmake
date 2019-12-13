@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_statistics/share/pal_statistics/cmake/pal_statisticsConfig.cmake

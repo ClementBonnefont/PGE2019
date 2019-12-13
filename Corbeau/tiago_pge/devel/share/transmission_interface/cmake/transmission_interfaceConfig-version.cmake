@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/transmission_interface/share/transmission_interface/cmake/transmission_interfaceConfig-version.cmake

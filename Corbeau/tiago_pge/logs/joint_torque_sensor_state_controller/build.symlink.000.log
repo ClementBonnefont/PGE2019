@@ -1,0 +1,5 @@
+Symlinking /home/pge/tiago_pge/devel/lib/libjoint_torque_sensor_state_controller.so
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/joint_torque_sensor_state_controller.pc
+Symlinking /home/pge/tiago_pge/devel/lib/joint_torque_sensor_state_controller/joint_state_relay_without_nans
+Symlinking /home/pge/tiago_pge/devel/share/joint_torque_sensor_state_controller/cmake/joint_torque_sensor_state_controllerConfig.cmake
+Symlinking /home/pge/tiago_pge/devel/share/joint_torque_sensor_state_controller/cmake/joint_torque_sensor_state_controllerConfig-version.cmake

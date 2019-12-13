@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: pmb2_maps
+Description: Description of pmb2_maps
+Version: 2.0.5
+Cflags: 
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: 

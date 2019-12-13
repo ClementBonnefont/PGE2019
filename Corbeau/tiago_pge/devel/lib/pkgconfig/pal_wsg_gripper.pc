@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_wsg_gripper/lib/pkgconfig/pal_wsg_gripper.pc

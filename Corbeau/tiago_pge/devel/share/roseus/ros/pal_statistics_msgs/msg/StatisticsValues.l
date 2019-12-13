@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_statistics_msgs/share/roseus/ros/pal_statistics_msgs/msg/StatisticsValues.l

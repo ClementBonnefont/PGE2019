@@ -1,0 +1,6 @@
+devel_space: /home/pge/tiago_pge/devel
+install: false
+install_space: /home/pge/tiago_pge/install
+profile: default
+source_space: /home/pge/tiago_pge/src
+workspace: /home/pge/tiago_pge

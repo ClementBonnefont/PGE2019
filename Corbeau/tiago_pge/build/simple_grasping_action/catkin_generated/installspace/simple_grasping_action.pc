@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: simple_grasping_action
+Description: Description of simple_grasping_action
+Version: 1.0.1
+Cflags: 
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: 

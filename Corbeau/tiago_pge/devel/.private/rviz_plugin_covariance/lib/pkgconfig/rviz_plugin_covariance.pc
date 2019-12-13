@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/rviz_plugin_covariance
+
+Name: rviz_plugin_covariance
+Description: Description of rviz_plugin_covariance
+Version: 0.0.6
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/rviz_plugin_covariance/lib 
+Requires: 

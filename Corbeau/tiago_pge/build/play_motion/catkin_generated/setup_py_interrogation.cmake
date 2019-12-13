@@ -1,0 +1,6 @@
+set(play_motion_SETUP_PY_VERSION "0.4.8")
+set(play_motion_SETUP_PY_SCRIPTS "")
+set(play_motion_SETUP_PY_PACKAGES "play_motion")
+set(play_motion_SETUP_PY_PACKAGE_DIRS "src/play_motion")
+set(play_motion_SETUP_PY_MODULES "")
+set(play_motion_SETUP_PY_MODULE_DIRS "")

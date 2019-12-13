@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: look_to_point
+Description: Description of look_to_point
+Version: 2.0.2
+Cflags: 
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: 

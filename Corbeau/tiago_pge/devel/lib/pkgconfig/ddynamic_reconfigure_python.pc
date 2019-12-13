@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/ddynamic_reconfigure_python/lib/pkgconfig/ddynamic_reconfigure_python.pc

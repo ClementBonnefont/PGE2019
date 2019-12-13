@@ -1,0 +1,6 @@
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:13:4:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K[[m[K’ token
+ int[6] pylon_base_footprint_tf(int[] pose_pylone_frame) {
+[01;32m[K    ^[m[K
+make[2]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
+make: *** [all] Erreur 2

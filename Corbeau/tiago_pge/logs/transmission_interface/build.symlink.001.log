@@ -1,0 +1,6 @@
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/lib/libtransmission_interface_parser.so, /home/pge/tiago_pge/devel/lib/libtransmission_interface_parser.so)
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/lib/libtransmission_interface_loader.so, /home/pge/tiago_pge/devel/lib/libtransmission_interface_loader.so)
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/lib/libtransmission_interface_loader_plugins.so, /home/pge/tiago_pge/devel/lib/libtransmission_interface_loader_plugins.so)
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/lib/pkgconfig/transmission_interface.pc, /home/pge/tiago_pge/devel/lib/pkgconfig/transmission_interface.pc)
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/share/transmission_interface/cmake/transmission_interfaceConfig-version.cmake, /home/pge/tiago_pge/devel/share/transmission_interface/cmake/transmission_interfaceConfig-version.cmake)
+Linked: (/home/pge/tiago_pge/devel/.private/transmission_interface/share/transmission_interface/cmake/transmission_interfaceConfig.cmake, /home/pge/tiago_pge/devel/share/transmission_interface/cmake/transmission_interfaceConfig.cmake)

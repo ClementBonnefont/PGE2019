@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/pal_vision_msgs
+
+Name: pal_vision_msgs
+Description: Description of pal_vision_msgs
+Version: 0.12.13
+Cflags: -I/home/pge/tiago_pge/devel/.private/pal_vision_msgs/include
+Libs: -L/home/pge/tiago_pge/devel/.private/pal_vision_msgs/lib 
+Requires: message_runtime sensor_msgs geometry_msgs actionlib_msgs

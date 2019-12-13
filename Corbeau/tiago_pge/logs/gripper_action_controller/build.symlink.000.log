@@ -1,0 +1,4 @@
+Symlinking /home/pge/tiago_pge/devel/lib/libgripper_action_controller.so
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/gripper_action_controller.pc
+Symlinking /home/pge/tiago_pge/devel/share/gripper_action_controller/cmake/gripper_action_controllerConfig.cmake
+Symlinking /home/pge/tiago_pge/devel/share/gripper_action_controller/cmake/gripper_action_controllerConfig-version.cmake

@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: tiago_pylon_tf
+Description: Description of tiago_pylon_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: 

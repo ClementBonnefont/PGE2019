@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/tiago_2dnav
+
+Name: tiago_2dnav
+Description: Description of tiago_2dnav
+Version: 2.0.3
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/tiago_2dnav/lib 
+Requires: 

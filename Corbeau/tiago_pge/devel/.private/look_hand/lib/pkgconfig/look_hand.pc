@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/look_hand
+
+Name: look_hand
+Description: Description of look_hand
+Version: 2.0.2
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/look_hand/lib 
+Requires: 

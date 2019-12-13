@@ -1,0 +1,18 @@
+[01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/src/gazebo_ros_forcetorque.cpp:[m[K In member function ‘[01m[Kvoid gazebo::FTPlugin::UpdateChild()[m[K’:
+[01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/src/gazebo_ros_forcetorque.cpp:173:56:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::sensors::Sensor::GetUpdateRate()[m[K’ is deprecated [-Wdeprecated-declarations]
+         double rate = footContactSensor->GetUpdateRate();
+[01;32m[K                                                        ^[m[K
+In file included from [01m[K/usr/include/gazebo-7/gazebo/sensors/ContactSensor.hh:26:0[m[K,
+                 from [01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/include/pal_gazebo_plugins/gazebo_ros_forcetorque.h:67[m[K,
+                 from [01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/src/gazebo_ros_forcetorque.cpp:37[m[K:
+[01m[K/usr/include/gazebo-7/gazebo/sensors/Sensor.hh:96:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double GetUpdateRate() GAZEBO_DEPRECATED(7.0);
+[01;32m[K                      ^[m[K
+[01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/src/gazebo_ros_forcetorque.cpp:180:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::msgs::Contacts gazebo::sensors::ContactSensor::GetContacts() const[m[K’ is deprecated [-Wdeprecated-declarations]
+         contacts = this->footContactSensor->GetContacts();
+[01;32m[K                                                         ^[m[K
+In file included from [01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/include/pal_gazebo_plugins/gazebo_ros_forcetorque.h:67:0[m[K,
+                 from [01m[K/home/pge/tiago_pge/src/pal_gazebo_plugins/src/gazebo_ros_forcetorque.cpp:37[m[K:
+[01m[K/usr/include/gazebo-7/gazebo/sensors/ContactSensor.hh:126:30:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: msgs::Contacts GetContacts() const GAZEBO_DEPRECATED(7.0);
+[01;32m[K                              ^[m[K

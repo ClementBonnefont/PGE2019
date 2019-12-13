@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/pal_python
+
+Name: pal_python
+Description: Description of pal_python
+Version: 0.9.14
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/pal_python/lib 
+Requires: rospy roslib rosgraph actionlib actionlib_msgs

@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: effort_controllers
+Description: Description of effort_controllers
+Version: 0.3.18
+Cflags: -I/home/pge/tiago_pge/install/include
+Libs: -L/home/pge/tiago_pge/install/lib -leffort_controllers
+Requires: angles controller_interface control_msgs control_toolbox forward_command_controller realtime_tools urdf

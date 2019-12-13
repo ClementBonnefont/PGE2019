@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o: référence au symbole non défini « _ZN2tf17TransformListenerD1Ev »
+/opt/ros/kinetic/lib/libtf.so: error adding symbols: DSO manquant dans la ligne de commande
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/pge/tiago_pge/devel/.private/tiago_move_arm_pylon/lib/tiago_move_arm_pylon/plan_arm_torso_ik_pylon] Erreur 1
+make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
+make: *** [all] Erreur 2

@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_multirobot_msgs/share/pal_multirobot_msgs/cmake/pal_multirobot_msgsConfig-version.cmake

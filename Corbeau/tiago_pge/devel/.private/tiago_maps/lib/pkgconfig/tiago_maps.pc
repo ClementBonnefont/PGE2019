@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/tiago_maps
+
+Name: tiago_maps
+Description: Description of tiago_maps
+Version: 2.0.3
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/tiago_maps/lib 
+Requires: 

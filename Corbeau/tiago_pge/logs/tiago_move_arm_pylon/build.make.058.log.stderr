@@ -1,0 +1,7 @@
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:44:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+       listener.waitForTransform("pylon", "base_footprint", ros::Time()::now(), ros::Duration(20.0));
+[01;32m[K                                                                       ^[m[K
+make[2]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
+make: *** [all] Erreur 2

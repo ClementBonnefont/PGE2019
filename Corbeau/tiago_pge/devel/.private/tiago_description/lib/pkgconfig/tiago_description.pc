@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/tiago_description
+
+Name: tiago_description
+Description: Description of tiago_description
+Version: 2.0.35
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/tiago_description/lib 
+Requires: 

@@ -1,0 +1,5 @@
+Linked: (/home/pge/tiago_pge/devel/.private/controller_manager/lib/libcontroller_manager.so, /home/pge/tiago_pge/devel/lib/libcontroller_manager.so)
+Linked: (/home/pge/tiago_pge/devel/.private/controller_manager/lib/pkgconfig/controller_manager.pc, /home/pge/tiago_pge/devel/lib/pkgconfig/controller_manager.pc)
+Linked: (/home/pge/tiago_pge/devel/.private/controller_manager/lib/python2.7/dist-packages/controller_manager/__init__.py, /home/pge/tiago_pge/devel/lib/python2.7/dist-packages/controller_manager/__init__.py)
+Linked: (/home/pge/tiago_pge/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake, /home/pge/tiago_pge/devel/share/controller_manager/cmake/controller_managerConfig.cmake)
+Linked: (/home/pge/tiago_pge/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig-version.cmake, /home/pge/tiago_pge/devel/share/controller_manager/cmake/controller_managerConfig-version.cmake)

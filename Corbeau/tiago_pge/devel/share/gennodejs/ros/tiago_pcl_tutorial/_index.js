@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/tiago_pcl_tutorial/share/gennodejs/ros/tiago_pcl_tutorial/_index.js

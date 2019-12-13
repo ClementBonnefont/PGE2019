@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_vision_msgs/share/roseus/ros/pal_vision_msgs/msg/DetectedPerson.l

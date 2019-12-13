@@ -1,0 +1,7 @@
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:119:54:[m[K [01;31m[Kerror: [m[K‘[01m[Krow[m[K’ was not declared in this scope
+   bool success = bool(group_arm_torso.plan(my_plan));row 
+[01;32m[K                                                      ^[m[K
+make[2]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
+make: *** [all] Erreur 2

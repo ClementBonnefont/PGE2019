@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/aruco/share/aruco/cmake/arucoConfig.cmake

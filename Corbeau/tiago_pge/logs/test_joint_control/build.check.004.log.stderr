@@ -1,0 +1,12 @@
+[31m[1mCMake Error[0m at /home/pge/tiago_pge/src/test_pge/test_joint_control/CMakeLists.txt:17 (add_executable):
+  Cannot find source file:
+
+    src/run_traj_control.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: run_traj_control
+CMake Error: Cannot determine link language for target "run_traj_control".
+make: *** [cmake_check_build_system] Erreur 1

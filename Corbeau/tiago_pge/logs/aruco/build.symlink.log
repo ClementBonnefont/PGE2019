@@ -1,0 +1,5 @@
+Linked: (/home/pge/tiago_pge/devel/.private/aruco/lib/libaruco.so, /home/pge/tiago_pge/devel/lib/libaruco.so)
+Linked: (/home/pge/tiago_pge/devel/.private/aruco/lib/pkgconfig/aruco.pc, /home/pge/tiago_pge/devel/lib/pkgconfig/aruco.pc)
+Linked: (/home/pge/tiago_pge/devel/.private/aruco/lib/aruco/optimalmarkers, /home/pge/tiago_pge/devel/lib/aruco/optimalmarkers)
+Linked: (/home/pge/tiago_pge/devel/.private/aruco/share/aruco/cmake/arucoConfig.cmake, /home/pge/tiago_pge/devel/share/aruco/cmake/arucoConfig.cmake)
+Linked: (/home/pge/tiago_pge/devel/.private/aruco/share/aruco/cmake/arucoConfig-version.cmake, /home/pge/tiago_pge/devel/share/aruco/cmake/arucoConfig-version.cmake)

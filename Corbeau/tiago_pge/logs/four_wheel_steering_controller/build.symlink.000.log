@@ -1,0 +1,4 @@
+Symlinking /home/pge/tiago_pge/devel/lib/libfour_wheel_steering_controller.so
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/four_wheel_steering_controller.pc
+Symlinking /home/pge/tiago_pge/devel/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig-version.cmake
+Symlinking /home/pge/tiago_pge/devel/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig.cmake

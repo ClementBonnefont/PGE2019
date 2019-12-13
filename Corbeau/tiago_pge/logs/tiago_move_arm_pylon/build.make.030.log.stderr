@@ -1,0 +1,38 @@
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:31:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped {aka struct geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+   goal_pose_pylon_frame.pose.position.x = atof(argv[1]);
+[01;32m[K                         ^[m[K
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:32:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped {aka struct geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+   goal_pose_pylon_frame.pose.position.y = atof(argv[2]);
+[01;32m[K                         ^[m[K
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:33:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped {aka struct geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+   goal_pose_pylon_frame.pose.position.z = atof(argv[3]);
+[01;32m[K                         ^[m[K
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:34:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped {aka struct geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+   goal_pose_pylon_frame.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(atof(argv[4]), atof(argv[5]), atof(argv[6]));
+[01;32m[K                         ^[m[K
+[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:39:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf::TransformListener::transformPose(const char [15], geometry_msgs::PointStamped&, geometry_msgs::PoseStamped&)[m[K’
+   listener.transformPose("base_footprint", goal_pose_pylon_frame, goal_pose);
+[01;32m[K                                                                            ^[m[K
+In file included from [01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:6:0[m[K:
+[01m[K/opt/ros/kinetic/include/tf/transform_listener.h:104:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf::TransformListener::transformPose(const string&, const PoseStamped&, geometry_msgs::PoseStamped&) const
+   void transformPose(const std::string& target_frame, const geometry_msgs::PoseStamped& stamped_in, geometry_msgs::PoseStamped& stamped_out) const;
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/tf/transform_listener.h:104:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kgeometry_msgs::PointStamped {aka geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst PoseStamped& {aka const geometry_msgs::PoseStamped_<std::allocator<void> >&}[m[K’
+[01m[K/opt/ros/kinetic/include/tf/transform_listener.h:128:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf::TransformListener::transformPose(const string&, const ros::Time&, const PoseStamped&, const string&, geometry_msgs::PoseStamped&) const
+   void transformPose(const std::string& target_frame, const ros::Time& target_time,
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/tf/transform_listener.h:128:8:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+In file included from [01m[K/opt/ros/kinetic/include/moveit/move_group_interface/move_group_interface.h:55:0[m[K,
+                 from [01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:5[m[K:
+[01m[K/opt/ros/kinetic/include/tf/tf.h:272:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf::Transformer::transformPose(const string&, const ros::Time&, const tf::Stamped<tf::Transform>&, const string&, tf::Stamped<tf::Transform>&) const
+   void transformPose(const std::string& target_frame, const ros::Time& target_time,
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/tf/tf.h:272:8:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+[01m[K/opt/ros/kinetic/include/tf/tf.h:250:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf::Transformer::transformPose(const string&, const tf::Stamped<tf::Transform>&, tf::Stamped<tf::Transform>&) const
+   void transformPose(const std::string& target_frame, const Stamped<tf::Pose>& stamped_in, Stamped<tf::Pose>& stamped_out) const;
+[01;32m[K        ^[m[K
+[01m[K/opt/ros/kinetic/include/tf/tf.h:250:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kgeometry_msgs::PointStamped {aka geometry_msgs::PointStamped_<std::allocator<void> >}[m[K’ to ‘[01m[Kconst tf::Stamped<tf::Transform>&[m[K’
+make[2]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
+make: *** [all] Erreur 2

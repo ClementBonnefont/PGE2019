@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/gazebo_msgs
+
+Name: gazebo_msgs
+Description: Description of gazebo_msgs
+Version: 2.6.9
+Cflags: -I/home/pge/tiago_pge/devel/.private/gazebo_msgs/include
+Libs: -L/home/pge/tiago_pge/devel/.private/gazebo_msgs/lib 
+Requires: message_runtime std_msgs trajectory_msgs geometry_msgs sensor_msgs std_srvs

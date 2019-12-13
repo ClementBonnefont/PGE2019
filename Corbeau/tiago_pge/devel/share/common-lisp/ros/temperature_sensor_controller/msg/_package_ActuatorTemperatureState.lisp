@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/temperature_sensor_controller/share/common-lisp/ros/temperature_sensor_controller/msg/_package_ActuatorTemperatureState.lisp

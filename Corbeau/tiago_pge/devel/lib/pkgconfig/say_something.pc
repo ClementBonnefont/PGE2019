@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/say_something/lib/pkgconfig/say_something.pc

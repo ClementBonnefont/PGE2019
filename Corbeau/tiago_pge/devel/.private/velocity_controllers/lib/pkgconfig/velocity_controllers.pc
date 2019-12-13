@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/velocity_controllers
+
+Name: velocity_controllers
+Description: Description of velocity_controllers
+Version: 0.3.18
+Cflags: -I/home/pge/tiago_pge/src/ros_controllers/velocity_controllers/include
+Libs: -L/home/pge/tiago_pge/devel/.private/velocity_controllers/lib -lvelocity_controllers
+Requires: angles control_msgs control_toolbox controller_interface forward_command_controller realtime_tools urdf

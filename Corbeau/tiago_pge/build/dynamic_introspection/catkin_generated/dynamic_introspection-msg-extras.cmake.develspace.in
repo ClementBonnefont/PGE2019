@@ -1,0 +1,2 @@
+set(dynamic_introspection_MESSAGE_FILES "/home/pge/tiago_pge/src/dynamic_introspection/msg/BoolParameter.msg;/home/pge/tiago_pge/src/dynamic_introspection/msg/IntrospectionMsg.msg;/home/pge/tiago_pge/src/dynamic_introspection/msg/DoubleParameter.msg;/home/pge/tiago_pge/src/dynamic_introspection/msg/IntParameter.msg;/home/pge/tiago_pge/src/dynamic_introspection/msg/MarkerParameter.msg")
+set(dynamic_introspection_SERVICE_FILES "")

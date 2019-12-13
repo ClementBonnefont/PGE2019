@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/simple_models_controller_configuration
+
+Name: simple_models_controller_configuration
+Description: Description of simple_models_controller_configuration
+Version: 0.0.17
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/simple_models_controller_configuration/lib 
+Requires: 

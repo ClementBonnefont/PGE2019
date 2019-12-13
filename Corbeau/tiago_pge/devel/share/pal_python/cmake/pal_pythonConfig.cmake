@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_python/share/pal_python/cmake/pal_pythonConfig.cmake

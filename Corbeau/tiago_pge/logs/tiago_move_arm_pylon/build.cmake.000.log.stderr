@@ -1,0 +1,7 @@
+[31m[1mCMake Error[0m at /opt/ros/kinetic/share/catkin/cmake/custom_install.cmake:13 (_install):
+  install TARGETS given target "plan_arm_torso_ik-pylon" which does not exist
+  in this directory.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:28 (install)
+
+

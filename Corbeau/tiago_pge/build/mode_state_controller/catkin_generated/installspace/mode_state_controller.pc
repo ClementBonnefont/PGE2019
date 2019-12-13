@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: mode_state_controller
+Description: Description of mode_state_controller
+Version: 0.3.18
+Cflags: -I/home/pge/tiago_pge/install/include
+Libs: -L/home/pge/tiago_pge/install/lib -lmode_state_controller
+Requires: realtime_tools hardware_interface pluginlib controller_interface sensor_msgs pal_hardware_interfaces

@@ -1,0 +1,4 @@
+Linked: (/home/pge/tiago_pge/devel/.private/gripper_action_controller/lib/libgripper_action_controller.so, /home/pge/tiago_pge/devel/lib/libgripper_action_controller.so)
+Linked: (/home/pge/tiago_pge/devel/.private/gripper_action_controller/lib/pkgconfig/gripper_action_controller.pc, /home/pge/tiago_pge/devel/lib/pkgconfig/gripper_action_controller.pc)
+Linked: (/home/pge/tiago_pge/devel/.private/gripper_action_controller/share/gripper_action_controller/cmake/gripper_action_controllerConfig.cmake, /home/pge/tiago_pge/devel/share/gripper_action_controller/cmake/gripper_action_controllerConfig.cmake)
+Linked: (/home/pge/tiago_pge/devel/.private/gripper_action_controller/share/gripper_action_controller/cmake/gripper_action_controllerConfig-version.cmake, /home/pge/tiago_pge/devel/share/gripper_action_controller/cmake/gripper_action_controllerConfig-version.cmake)

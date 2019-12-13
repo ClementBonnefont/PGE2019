@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/combined_robot_hw
+
+Name: combined_robot_hw
+Description: Description of combined_robot_hw
+Version: 0.2.10
+Cflags: -I/home/pge/tiago_pge/src/ros_control/combined_robot_hw/include
+Libs: -L/home/pge/tiago_pge/devel/.private/combined_robot_hw/lib -lcombined_robot_hw
+Requires: hardware_interface pluginlib roscpp

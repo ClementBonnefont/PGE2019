@@ -1,0 +1,5 @@
+pal_wsg_gripper/pal_wsg_gripper
+/home/pge/tiago_pge/devel/.private/pal_wsg_gripper/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
+/home/pge/tiago_pge/devel/.private/pal_wsg_gripper/lib/pkgconfig/pal_wsg_gripper.pc /home/pge/tiago_pge/devel/lib/pkgconfig/pal_wsg_gripper.pc
+/home/pge/tiago_pge/devel/.private/pal_wsg_gripper/share/pal_wsg_gripper/cmake/pal_wsg_gripperConfig-version.cmake /home/pge/tiago_pge/devel/share/pal_wsg_gripper/cmake/pal_wsg_gripperConfig-version.cmake
+/home/pge/tiago_pge/devel/.private/pal_wsg_gripper/share/pal_wsg_gripper/cmake/pal_wsg_gripperConfig.cmake /home/pge/tiago_pge/devel/share/pal_wsg_gripper/cmake/pal_wsg_gripperConfig.cmake

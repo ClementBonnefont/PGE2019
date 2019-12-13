@@ -1,0 +1,6 @@
+set(pal_carbon_collector_SETUP_PY_VERSION "1.3.1")
+set(pal_carbon_collector_SETUP_PY_SCRIPTS "")
+set(pal_carbon_collector_SETUP_PY_PACKAGES "pal_carbon_collector")
+set(pal_carbon_collector_SETUP_PY_PACKAGE_DIRS "src/pal_carbon_collector")
+set(pal_carbon_collector_SETUP_PY_MODULES "")
+set(pal_carbon_collector_SETUP_PY_MODULE_DIRS "")

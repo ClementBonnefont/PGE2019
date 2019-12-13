@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target four_wheel_steering_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/four_wheel_steering_controller.dir/src/four_wheel_steering_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/four_wheel_steering_controller.dir/src/odometry.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/four_wheel_steering_controller.dir/src/speed_limiter.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/lib/libfour_wheel_steering_controller.so[0m
+[100%] Built target four_wheel_steering_controller

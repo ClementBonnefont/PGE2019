@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/gazebo_dev/lib/pkgconfig/gazebo_dev.pc

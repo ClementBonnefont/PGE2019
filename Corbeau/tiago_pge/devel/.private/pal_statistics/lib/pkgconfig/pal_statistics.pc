@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/pal_statistics
+
+Name: pal_statistics
+Description: Description of pal_statistics
+Version: 1.3.1
+Cflags: -I/home/pge/tiago_pge/src/pal_statistics/pal_statistics/include
+Libs: -L/home/pge/tiago_pge/devel/.private/pal_statistics/lib -lpal_statistics
+Requires: pal_statistics_msgs roscpp

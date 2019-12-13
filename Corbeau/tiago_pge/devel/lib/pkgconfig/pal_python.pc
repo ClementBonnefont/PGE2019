@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_python/lib/pkgconfig/pal_python.pc

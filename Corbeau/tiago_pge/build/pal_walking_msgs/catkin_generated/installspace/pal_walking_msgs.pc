@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/install
+
+Name: pal_walking_msgs
+Description: Description of pal_walking_msgs
+Version: 0.12.13
+Cflags: -I/home/pge/tiago_pge/install/include
+Libs: -L/home/pge/tiago_pge/install/lib 
+Requires: geometry_msgs humanoid_nav_msgs message_runtime

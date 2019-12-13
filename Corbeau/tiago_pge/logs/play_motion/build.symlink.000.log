@@ -1,0 +1,7 @@
+Symlinking /home/pge/tiago_pge/devel/lib/libplay_motion_helpers.so
+Symlinking /home/pge/tiago_pge/devel/lib/pkgconfig/play_motion.pc
+Symlinking /home/pge/tiago_pge/devel/lib/python2.7/dist-packages/play_motion/__init__.py
+Symlinking /home/pge/tiago_pge/devel/lib/play_motion/run_motion
+Symlinking /home/pge/tiago_pge/devel/lib/play_motion/play_motion
+Symlinking /home/pge/tiago_pge/devel/share/play_motion/cmake/play_motionConfig.cmake
+Symlinking /home/pge/tiago_pge/devel/share/play_motion/cmake/play_motionConfig-version.cmake

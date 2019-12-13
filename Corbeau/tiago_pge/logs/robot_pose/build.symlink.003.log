@@ -1,0 +1,5 @@
+Linked: (/home/pge/tiago_pge/devel/.private/robot_pose/lib/pkgconfig/robot_pose.pc, /home/pge/tiago_pge/devel/lib/pkgconfig/robot_pose.pc)
+Linked: (/home/pge/tiago_pge/devel/.private/robot_pose/lib/robot_pose/robot_pose_node, /home/pge/tiago_pge/devel/lib/robot_pose/robot_pose_node)
+Linked: (/home/pge/tiago_pge/devel/.private/robot_pose/lib/robot_pose/distance_publisher_node, /home/pge/tiago_pge/devel/lib/robot_pose/distance_publisher_node)
+Linked: (/home/pge/tiago_pge/devel/.private/robot_pose/share/robot_pose/cmake/robot_poseConfig-version.cmake, /home/pge/tiago_pge/devel/share/robot_pose/cmake/robot_poseConfig-version.cmake)
+Linked: (/home/pge/tiago_pge/devel/.private/robot_pose/share/robot_pose/cmake/robot_poseConfig.cmake, /home/pge/tiago_pge/devel/share/robot_pose/cmake/robot_poseConfig.cmake)

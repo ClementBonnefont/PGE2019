@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/tiago_pick_demo/share/gennodejs/ros/tiago_pick_demo/msg/PickUpPoseFeedback.js

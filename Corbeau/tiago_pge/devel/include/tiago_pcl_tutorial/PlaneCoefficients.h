@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/tiago_pcl_tutorial/include/tiago_pcl_tutorial/PlaneCoefficients.h

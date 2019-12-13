@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/gazebo_dev
+
+Name: gazebo_dev
+Description: Description of gazebo_dev
+Version: 2.6.9
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/gazebo_dev/lib 
+Requires: 

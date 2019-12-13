@@ -1,0 +1,8 @@
+[ 14%] Built target gazebo_pal_hand
+[ 28%] Built target gazebo_attachment
+[ 28%] Built target pal_multirobot_msgs_generate_messages_cpp
+[ 42%] Built target gazebo_harness
+[ 57%] Built target gazebo_world_odometry
+[ 71%] Built target gazebo_ros_forcetorque
+[ 85%] Built target gazebo_underactuated_finger
+[100%] Built target gazebo_wifi_ap

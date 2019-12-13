@@ -1,0 +1,1 @@
+/home/pge/tiago_pge/devel/.private/pal_motion_model_msgs/share/roseus/ros/pal_motion_model_msgs/manifest.l

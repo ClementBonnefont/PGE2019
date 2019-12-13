@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target gripper_action_controller_xacro_generated_to_devel_space_[0m
+[35m[1mScanning dependencies of target gripper_action_controller[0m
+[  0%] Built target gripper_action_controller_xacro_generated_to_devel_space_
+[ 50%] [32mBuilding CXX object CMakeFiles/gripper_action_controller.dir/src/gripper_action_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/pge/tiago_pge/devel/.private/gripper_action_controller/lib/libgripper_action_controller.so[0m
+[100%] Built target gripper_action_controller

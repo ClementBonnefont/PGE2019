@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/pmb2_bringup
+
+Name: pmb2_bringup
+Description: Description of pmb2_bringup
+Version: 3.0.10
+Cflags: 
+Libs: -L/home/pge/tiago_pge/devel/.private/pmb2_bringup/lib 
+Requires: 

@@ -1,0 +1,27 @@
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  2%] [34m[1mGenerating dynamic reconfigure files from cfg/SphericalGrasp.cfg: /home/pge/tiago_pge/devel/.private/tiago_pick_demo/include/tiago_pick_demo/SphericalGraspConfig.h /home/pge/tiago_pge/devel/.private/tiago_pick_demo/lib/python2.7/dist-packages/tiago_pick_demo/cfg/SphericalGraspConfig.py[0m
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionFeedback
+Generating reconfiguration files for SphericalGrasp in spherical_grasps_server
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseFeedback
+Wrote header file in /home/pge/tiago_pge/devel/.private/tiago_pick_demo/include/tiago_pick_demo/SphericalGraspConfig.h
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseAction
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseResult
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionGoal
+[  2%] Built target tiago_pick_demo_gencfg
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseGoal
+[  2%] Built target geometry_msgs_generate_messages_nodejs
+[  2%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionResult
+[  2%] Built target actionlib_msgs_generate_messages_nodejs
+[  2%] Built target geometry_msgs_generate_messages_py
+[  2%] Built target geometry_msgs_generate_messages_lisp
+[  2%] Built target actionlib_msgs_generate_messages_py
+[  2%] Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target geometry_msgs_generate_messages_cpp
+[  2%] Built target actionlib_msgs_generate_messages_lisp
+[ 21%] Built target tiago_pick_demo_generate_messages_nodejs
+[ 42%] Built target tiago_pick_demo_generate_messages_eus
+[ 60%] Built target tiago_pick_demo_generate_messages_cpp
+[ 81%] Built target tiago_pick_demo_generate_messages_py
+[100%] Built target tiago_pick_demo_generate_messages_lisp
+[100%] Built target tiago_pick_demo_generate_messages

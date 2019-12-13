@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target roboticsgroup_gazebo_disable_link_plugin[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/src/disable_link_plugin.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/pge/tiago_pge/devel/.private/roboticsgroup_gazebo_plugins/lib/libroboticsgroup_gazebo_disable_link_plugin.so[0m
+[ 50%] Built target roboticsgroup_gazebo_disable_link_plugin
+[35m[1mScanning dependencies of target roboticsgroup_gazebo_mimic_joint_plugin[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/src/mimic_joint_plugin.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/pge/tiago_pge/devel/.private/roboticsgroup_gazebo_plugins/lib/libroboticsgroup_gazebo_mimic_joint_plugin.so[0m
+[100%] Built target roboticsgroup_gazebo_mimic_joint_plugin

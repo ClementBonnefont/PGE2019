@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/joy_teleop
+
+Name: joy_teleop
+Description: Description of joy_teleop
+Version: 0.3.2
+Cflags: -I/home/pge/tiago_pge/src/teleop_tools/joy_teleop/include
+Libs: -L/home/pge/tiago_pge/devel/.private/joy_teleop/lib 
+Requires: actionlib teleop_tools_msgs

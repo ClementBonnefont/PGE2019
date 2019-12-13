@@ -1,0 +1,8 @@
+prefix=/home/pge/tiago_pge/devel/.private/teleop_tools_msgs
+
+Name: teleop_tools_msgs
+Description: Description of teleop_tools_msgs
+Version: 0.3.2
+Cflags: -I/home/pge/tiago_pge/devel/.private/teleop_tools_msgs/include
+Libs: -L/home/pge/tiago_pge/devel/.private/teleop_tools_msgs/lib 
+Requires: message_runtime actionlib_msgs
