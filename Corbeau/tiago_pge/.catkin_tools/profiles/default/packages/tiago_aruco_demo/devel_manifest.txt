@@ -1,5 +1,0 @@
-tiago_tutorials/tiago_aruco_demo
-/home/pge/tiago_pge/devel/.private/tiago_aruco_demo/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/tiago_aruco_demo/lib/pkgconfig/tiago_aruco_demo.pc /home/pge/tiago_pge/devel/lib/pkgconfig/tiago_aruco_demo.pc
-/home/pge/tiago_pge/devel/.private/tiago_aruco_demo/share/tiago_aruco_demo/cmake/tiago_aruco_demoConfig.cmake /home/pge/tiago_pge/devel/share/tiago_aruco_demo/cmake/tiago_aruco_demoConfig.cmake
-/home/pge/tiago_pge/devel/.private/tiago_aruco_demo/share/tiago_aruco_demo/cmake/tiago_aruco_demoConfig-version.cmake /home/pge/tiago_pge/devel/share/tiago_aruco_demo/cmake/tiago_aruco_demoConfig-version.cmake

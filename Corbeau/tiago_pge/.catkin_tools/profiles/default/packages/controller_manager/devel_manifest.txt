@@ -1,7 +1,0 @@
-ros_control/controller_manager
-/home/pge/tiago_pge/devel/.private/controller_manager/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/controller_manager/lib/libcontroller_manager.so /home/pge/tiago_pge/devel/lib/libcontroller_manager.so
-/home/pge/tiago_pge/devel/.private/controller_manager/lib/pkgconfig/controller_manager.pc /home/pge/tiago_pge/devel/lib/pkgconfig/controller_manager.pc
-/home/pge/tiago_pge/devel/.private/controller_manager/lib/python2.7/dist-packages/controller_manager/__init__.py /home/pge/tiago_pge/devel/lib/python2.7/dist-packages/controller_manager/__init__.py
-/home/pge/tiago_pge/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake /home/pge/tiago_pge/devel/share/controller_manager/cmake/controller_managerConfig.cmake
-/home/pge/tiago_pge/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig-version.cmake /home/pge/tiago_pge/devel/share/controller_manager/cmake/controller_managerConfig-version.cmake

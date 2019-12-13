@@ -1,5 +1,0 @@
-tiago_navigation/tiago_laser_sensors
-/home/pge/tiago_pge/devel/.private/tiago_laser_sensors/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/tiago_laser_sensors/lib/pkgconfig/tiago_laser_sensors.pc /home/pge/tiago_pge/devel/lib/pkgconfig/tiago_laser_sensors.pc
-/home/pge/tiago_pge/devel/.private/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig.cmake /home/pge/tiago_pge/devel/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig.cmake
-/home/pge/tiago_pge/devel/.private/tiago_laser_sensors/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig-version.cmake /home/pge/tiago_pge/devel/share/tiago_laser_sensors/cmake/tiago_laser_sensorsConfig-version.cmake

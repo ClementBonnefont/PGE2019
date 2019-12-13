@@ -1,9 +1,0 @@
-simple_models_robot/simple_models_gazebo
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/lib/libgazebo_four_wheel_diff_drive_plugin.so /home/pge/tiago_pge/devel/lib/libgazebo_four_wheel_diff_drive_plugin.so
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/lib/libgazebo_diff_drive.so /home/pge/tiago_pge/devel/lib/libgazebo_diff_drive.so
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/lib/libgazebo_diff_drive_plugin.so /home/pge/tiago_pge/devel/lib/libgazebo_diff_drive_plugin.so
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/lib/libgazebo_zero_wheel_vel.so /home/pge/tiago_pge/devel/lib/libgazebo_zero_wheel_vel.so
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/lib/pkgconfig/simple_models_gazebo.pc /home/pge/tiago_pge/devel/lib/pkgconfig/simple_models_gazebo.pc
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/share/simple_models_gazebo/cmake/simple_models_gazeboConfig.cmake /home/pge/tiago_pge/devel/share/simple_models_gazebo/cmake/simple_models_gazeboConfig.cmake
-/home/pge/tiago_pge/devel/.private/simple_models_gazebo/share/simple_models_gazebo/cmake/simple_models_gazeboConfig-version.cmake /home/pge/tiago_pge/devel/share/simple_models_gazebo/cmake/simple_models_gazeboConfig-version.cmake

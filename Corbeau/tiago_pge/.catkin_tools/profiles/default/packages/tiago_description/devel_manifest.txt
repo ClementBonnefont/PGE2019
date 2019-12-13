@@ -1,5 +1,0 @@
-tiago_robot/tiago_description
-/home/pge/tiago_pge/devel/.private/tiago_description/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/tiago_description/lib/pkgconfig/tiago_description.pc /home/pge/tiago_pge/devel/lib/pkgconfig/tiago_description.pc
-/home/pge/tiago_pge/devel/.private/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake /home/pge/tiago_pge/devel/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake
-/home/pge/tiago_pge/devel/.private/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig.cmake /home/pge/tiago_pge/devel/share/tiago_description/cmake/tiago_descriptionConfig.cmake

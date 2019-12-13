@@ -1,5 +1,0 @@
-pmb2_robot/pmb2_controller_configuration
-/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration/lib/pkgconfig/pmb2_controller_configuration.pc /home/pge/tiago_pge/devel/lib/pkgconfig/pmb2_controller_configuration.pc
-/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig-version.cmake /home/pge/tiago_pge/devel/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig-version.cmake
-/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig.cmake /home/pge/tiago_pge/devel/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig.cmake

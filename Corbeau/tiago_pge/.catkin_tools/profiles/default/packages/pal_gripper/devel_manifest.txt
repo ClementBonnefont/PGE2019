@@ -1,5 +1,0 @@
-pal_gripper/pal_gripper
-/home/pge/tiago_pge/devel/.private/pal_gripper/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/pal_gripper/lib/pkgconfig/pal_gripper.pc /home/pge/tiago_pge/devel/lib/pkgconfig/pal_gripper.pc
-/home/pge/tiago_pge/devel/.private/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig.cmake /home/pge/tiago_pge/devel/share/pal_gripper/cmake/pal_gripperConfig.cmake
-/home/pge/tiago_pge/devel/.private/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig-version.cmake /home/pge/tiago_pge/devel/share/pal_gripper/cmake/pal_gripperConfig-version.cmake
