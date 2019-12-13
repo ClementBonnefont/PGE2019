@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_bringup/lib/pkgconfig/tiago_bringup.pc

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/tiago_opencv_tutorial
-
-Name: tiago_opencv_tutorial
-Description: Description of tiago_opencv_tutorial
-Version: 2.0.2
-Cflags: -I/home/pge/tiago_pge/devel/.private/tiago_opencv_tutorial/include
-Libs: -L/home/pge/tiago_pge/devel/.private/tiago_opencv_tutorial/lib -ltiago_opencv_tutorial
-Requires: roscpp rospy image_transport cv_bridge pal_detection_msgs geometry_msgs message_generation

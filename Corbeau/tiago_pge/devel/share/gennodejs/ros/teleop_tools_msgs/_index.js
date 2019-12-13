@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/teleop_tools_msgs/share/gennodejs/ros/teleop_tools_msgs/_index.js

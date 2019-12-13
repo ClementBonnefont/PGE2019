@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pal_hardware_gazebo
-
-Name: pal_hardware_gazebo
-Description: Description of pal_hardware_gazebo
-Version: 0.1.3
-Cflags: -I/home/pge/tiago_pge/src/pal_hardware_gazebo/include -I/usr/include -I/usr/include/gazebo-7 -I/usr/include/sdformat-4.0 -I/usr/include/ignition/math2 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/eigen3
-Libs: -L/home/pge/tiago_pge/devel/.private/pal_hardware_gazebo/lib -lpal_hardware_gazebo
-Requires: control_toolbox hardware_interface joint_limits_interface gazebo_ros_control

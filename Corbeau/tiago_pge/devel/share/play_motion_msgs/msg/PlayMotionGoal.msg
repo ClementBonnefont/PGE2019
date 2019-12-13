@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/play_motion_msgs/share/play_motion_msgs/msg/PlayMotionGoal.msg

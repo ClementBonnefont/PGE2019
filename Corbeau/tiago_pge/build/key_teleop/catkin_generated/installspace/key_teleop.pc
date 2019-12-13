@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: key_teleop
-Description: Description of key_teleop
-Version: 0.3.2
-Cflags: 
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/aruco
-
-Name: aruco
-Description: Description of aruco
-Version: 0.2.4
-Cflags: -I/home/pge/tiago_pge/src/aruco_ros/aruco/include
-Libs: -L/home/pge/tiago_pge/devel/.private/aruco/lib -laruco
-Requires: 

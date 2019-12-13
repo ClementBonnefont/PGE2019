@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/hey5_description
-
-Name: hey5_description
-Description: Description of hey5_description
-Version: 1.0.3
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/hey5_description/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_detection_msgs/share/roseus/ros/pal_detection_msgs/msg/RotatedDetection2d.l

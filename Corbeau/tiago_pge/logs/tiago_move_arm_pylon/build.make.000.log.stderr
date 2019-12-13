@@ -1,6 +1,0 @@
-/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o : Dans la fonction « _start » :
-(.text+0x20) : référence indéfinie vers « main »
-collect2: error: ld returned 1 exit status
-make[2]: *** [/home/pge/tiago_pge/devel/.private/tiago_move_arm_pylon/lib/tiago_move_arm_pylon/plan_arm_torso_ik_pylon] Erreur 1
-make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
-make: *** [all] Erreur 2

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/rqt_joint_trajectory_controller
-
-Name: rqt_joint_trajectory_controller
-Description: Description of rqt_joint_trajectory_controller
-Version: 0.3.18
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/rqt_joint_trajectory_controller/lib 
-Requires: 

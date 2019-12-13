@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target look_to_point[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/look_to_point.dir/src/look_to_point.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/pge/tiago_pge/devel/.private/look_to_point/lib/look_to_point/look_to_point[0m
-[100%] Built target look_to_point

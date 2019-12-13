@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pal_navigation_cfg_tiago_dual
-
-Name: pal_navigation_cfg_tiago_dual
-Description: Description of pal_navigation_cfg_tiago_dual
-Version: 1.0.0
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/pal_navigation_cfg_tiago_dual/lib 
-Requires: 

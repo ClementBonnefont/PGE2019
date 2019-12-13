@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/play_with_sensors/lib/pkgconfig/play_with_sensors.pc

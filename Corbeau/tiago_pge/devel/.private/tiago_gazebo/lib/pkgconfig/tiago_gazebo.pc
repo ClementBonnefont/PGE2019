@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/tiago_gazebo
-
-Name: tiago_gazebo
-Description: Description of tiago_gazebo
-Version: 2.0.20
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/tiago_gazebo/lib 
-Requires: 

@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target run_traj_control[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/run_traj_control.dir/src/run_traj_control.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/pge/tiago_pge/devel/.private/tiago_trajectory_controller/lib/tiago_trajectory_controller/run_traj_control[0m
-[100%] Built target run_traj_control

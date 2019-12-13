@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_interaction_msgs/share/roseus/ros/pal_interaction_msgs/msg/SoundActionGoal.l

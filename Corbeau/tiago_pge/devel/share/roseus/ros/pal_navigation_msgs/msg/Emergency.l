@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_navigation_msgs/share/roseus/ros/pal_navigation_msgs/msg/Emergency.l

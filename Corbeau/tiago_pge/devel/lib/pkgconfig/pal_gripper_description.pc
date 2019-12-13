@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_gripper_description/lib/pkgconfig/pal_gripper_description.pc

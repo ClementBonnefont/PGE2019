@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_pick_demo/include/tiago_pick_demo/PickUpPoseGoal.h

@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pmb2_2dnav_gazebo/lib/pkgconfig/pmb2_2dnav_gazebo.pc

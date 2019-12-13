@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/key_teleop/lib/pkgconfig/key_teleop.pc

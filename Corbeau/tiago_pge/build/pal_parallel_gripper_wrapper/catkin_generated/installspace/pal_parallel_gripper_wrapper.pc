@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: pal_parallel_gripper_wrapper
-Description: Description of pal_parallel_gripper_wrapper
-Version: 1.0.2
-Cflags: 
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: 

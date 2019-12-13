@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pmb2_maps/lib/pkgconfig/pmb2_maps.pc

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/backward_ros
-
-Name: backward_ros
-Description: Description of backward_ros
-Version: 0.1.7
-Cflags: -I/home/pge/tiago_pge/src/backward_ros/include
-Libs: -L/home/pge/tiago_pge/devel/.private/backward_ros/lib -lbackward
-Requires: 

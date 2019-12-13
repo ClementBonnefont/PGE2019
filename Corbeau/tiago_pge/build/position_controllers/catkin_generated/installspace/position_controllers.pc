@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: position_controllers
-Description: Description of position_controllers
-Version: 0.3.18
-Cflags: -I/home/pge/tiago_pge/install/include
-Libs: -L/home/pge/tiago_pge/install/lib -lposition_controllers
-Requires: controller_interface forward_command_controller

@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/simple_grasping_action/lib/pkgconfig/simple_grasping_action.pc

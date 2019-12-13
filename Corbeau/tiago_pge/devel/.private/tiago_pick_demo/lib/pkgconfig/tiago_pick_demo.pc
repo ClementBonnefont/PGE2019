@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/tiago_pick_demo
-
-Name: tiago_pick_demo
-Description: Description of tiago_pick_demo
-Version: 2.0.2
-Cflags: -I/home/pge/tiago_pge/devel/.private/tiago_pick_demo/include
-Libs: -L/home/pge/tiago_pge/devel/.private/tiago_pick_demo/lib 
-Requires: 

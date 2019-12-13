@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: pal_gripper_controller_configuration_gazebo
-Description: Description of pal_gripper_controller_configuration_gazebo
-Version: 1.0.2
-Cflags: 
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: 

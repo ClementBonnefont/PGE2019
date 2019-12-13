@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/gazebo_plugins/include/gazebo_plugins/GazeboRosCameraConfig.h

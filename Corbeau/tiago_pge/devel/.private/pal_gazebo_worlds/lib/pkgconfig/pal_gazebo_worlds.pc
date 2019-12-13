@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pal_gazebo_worlds
-
-Name: pal_gazebo_worlds
-Description: Description of pal_gazebo_worlds
-Version: 2.0.35
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/pal_gazebo_worlds/lib 
-Requires: gazebo_msgs

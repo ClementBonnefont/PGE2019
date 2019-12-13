@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pal_detection_msgs
-
-Name: pal_detection_msgs
-Description: Description of pal_detection_msgs
-Version: 0.12.13
-Cflags: -I/home/pge/tiago_pge/devel/.private/pal_detection_msgs/include
-Libs: -L/home/pge/tiago_pge/devel/.private/pal_detection_msgs/lib 
-Requires: message_runtime sensor_msgs geometry_msgs actionlib_msgs

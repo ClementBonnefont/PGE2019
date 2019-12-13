@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: aruco_ros
-Description: Description of aruco_ros
-Version: 0.2.4
-Cflags: -I/home/pge/tiago_pge/install/include
-Libs: -L/home/pge/tiago_pge/install/lib -laruco_ros_utils
-Requires: aruco sensor_msgs tf

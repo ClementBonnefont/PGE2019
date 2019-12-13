@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_opencv_tutorial/share/roseus/ros/tiago_opencv_tutorial/manifest.l

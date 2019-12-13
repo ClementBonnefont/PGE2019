@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: joy_teleop
-Description: Description of joy_teleop
-Version: 0.3.2
-Cflags: -I/home/pge/tiago_pge/install/include
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: actionlib teleop_tools_msgs

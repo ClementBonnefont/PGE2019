@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/gazebo_ros_control
-
-Name: gazebo_ros_control
-Description: Description of gazebo_ros_control
-Version: 2.6.9
-Cflags: -I/home/pge/tiago_pge/src/gazebo_ros_pkgs/gazebo_ros_control/include
-Libs: -L/home/pge/tiago_pge/devel/.private/gazebo_ros_control/lib -lgazebo_ros_control -ldefault_robot_hw_sim
-Requires: roscpp controller_manager pluginlib transmission_interface urdf

@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_pylon_tf/lib/pkgconfig/tiago_pylon_tf.pc

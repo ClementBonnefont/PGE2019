@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_pick_demo/lib/pkgconfig/tiago_pick_demo.pc

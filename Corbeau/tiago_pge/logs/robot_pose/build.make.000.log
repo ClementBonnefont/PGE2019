@@ -1,8 +1,0 @@
-[35m[1mScanning dependencies of target distance_publisher_node[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/distance_publisher_node.dir/src/distance_publisher.cpp.o[0m
-[ 50%] [32m[1mLinking CXX executable /home/pge/tiago_pge/devel/.private/robot_pose/lib/robot_pose/distance_publisher_node[0m
-[ 50%] Built target distance_publisher_node
-[35m[1mScanning dependencies of target robot_pose_node[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/robot_pose_node.dir/src/pose_publisher.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/pge/tiago_pge/devel/.private/robot_pose/lib/robot_pose/robot_pose_node[0m
-[100%] Built target robot_pose_node

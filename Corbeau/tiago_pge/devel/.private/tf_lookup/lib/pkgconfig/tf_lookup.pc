@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/tf_lookup
-
-Name: tf_lookup
-Description: Description of tf_lookup
-Version: 0.0.1
-Cflags: -I/home/pge/tiago_pge/devel/.private/tf_lookup/include -I/home/pge/tiago_pge/src/tf_lookup/include
-Libs: -L/home/pge/tiago_pge/devel/.private/tf_lookup/lib 
-Requires: actionlib_msgs geometry_msgs message_runtime tf

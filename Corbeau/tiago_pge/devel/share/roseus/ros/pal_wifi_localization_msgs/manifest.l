@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_wifi_localization_msgs/share/roseus/ros/pal_wifi_localization_msgs/manifest.l

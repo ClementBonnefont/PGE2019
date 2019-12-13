@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/lib/pkgconfig/four_wheel_steering_controller.pc

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: pal_navigation_sm
-Description: Description of pal_navigation_sm
-Version: 0.1.7
-Cflags: 
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: 

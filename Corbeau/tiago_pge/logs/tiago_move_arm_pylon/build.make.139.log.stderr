@@ -1,5 +1,0 @@
-[01m[K/home/pge/tiago_pge/src/tiago_move_arm_pylon/src/plan_arm_torso_ik_pylon.cpp:7:64:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_interface/planning_scene_interface.h: Aucun fichier ou dossier de ce type
-compilation terminated.
-make[2]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/src/plan_arm_torso_ik_pylon.cpp.o] Erreur 1
-make[1]: *** [CMakeFiles/plan_arm_torso_ik_pylon.dir/all] Erreur 2
-make: *** [all] Erreur 2

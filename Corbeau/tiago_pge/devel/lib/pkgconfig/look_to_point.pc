@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/look_to_point/lib/pkgconfig/look_to_point.pc

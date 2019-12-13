@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/aruco_msgs/lib/pkgconfig/aruco_msgs.pc

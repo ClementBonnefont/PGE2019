@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: pal_statistics_msgs
-Description: Description of pal_statistics_msgs
-Version: 1.3.1
-Cflags: -I/home/pge/tiago_pge/install/include
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: message_runtime std_msgs

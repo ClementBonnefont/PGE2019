@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_description_calibration/lib/pkgconfig/tiago_description_calibration.pc

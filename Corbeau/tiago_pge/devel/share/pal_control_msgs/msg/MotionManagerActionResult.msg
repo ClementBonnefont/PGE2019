@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_control_msgs/share/pal_control_msgs/msg/MotionManagerActionResult.msg

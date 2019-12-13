@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/rqt_joint_trajectory_controller/lib/pkgconfig/rqt_joint_trajectory_controller.pc

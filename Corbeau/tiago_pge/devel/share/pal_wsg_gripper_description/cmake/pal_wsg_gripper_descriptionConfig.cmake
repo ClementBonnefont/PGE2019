@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_wsg_gripper_description/share/pal_wsg_gripper_description/cmake/pal_wsg_gripper_descriptionConfig.cmake

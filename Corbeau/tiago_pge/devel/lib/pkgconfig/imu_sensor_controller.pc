@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/imu_sensor_controller/lib/pkgconfig/imu_sensor_controller.pc

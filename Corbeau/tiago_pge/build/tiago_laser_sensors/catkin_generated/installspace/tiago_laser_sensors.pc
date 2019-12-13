@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: tiago_laser_sensors
-Description: Description of tiago_laser_sensors
-Version: 2.0.3
-Cflags: 
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: 

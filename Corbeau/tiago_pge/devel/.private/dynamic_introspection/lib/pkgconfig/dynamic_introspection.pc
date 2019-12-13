@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/dynamic_introspection
-
-Name: dynamic_introspection
-Description: Description of dynamic_introspection
-Version: 1.0.12
-Cflags: -I/home/pge/tiago_pge/devel/.private/dynamic_introspection/include -I/home/pge/tiago_pge/src/dynamic_introspection/include -I/usr/include/eigen3
-Libs: -L/home/pge/tiago_pge/devel/.private/dynamic_introspection/lib -ldynamic_introspection
-Requires: roscpp message_generation rosbag pal_statistics visualization_msgs backward_ros std_msgs

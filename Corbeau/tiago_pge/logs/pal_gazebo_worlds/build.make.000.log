@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target increase_real_time_factor[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/increase_real_time_factor.dir/src/increase_real_time_factor.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/pge/tiago_pge/devel/.private/pal_gazebo_worlds/lib/pal_gazebo_worlds/increase_real_time_factor[0m
-[100%] Built target increase_real_time_factor

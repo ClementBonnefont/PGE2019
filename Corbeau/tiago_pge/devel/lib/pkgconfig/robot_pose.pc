@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/robot_pose/lib/pkgconfig/robot_pose.pc

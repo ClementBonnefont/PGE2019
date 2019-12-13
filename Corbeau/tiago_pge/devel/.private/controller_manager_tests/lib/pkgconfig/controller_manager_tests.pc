@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/controller_manager_tests
-
-Name: controller_manager_tests
-Description: Description of controller_manager_tests
-Version: 0.2.10
-Cflags: -I/home/pge/tiago_pge/src/ros_control/controller_manager_tests/include
-Libs: -L/home/pge/tiago_pge/devel/.private/controller_manager_tests/lib -lcontroller_manager_tests
-Requires: controller_manager controller_interface

@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pal_multirobot_msgs
-
-Name: pal_multirobot_msgs
-Description: Description of pal_multirobot_msgs
-Version: 0.12.13
-Cflags: -I/home/pge/tiago_pge/devel/.private/pal_multirobot_msgs/include
-Libs: -L/home/pge/tiago_pge/devel/.private/pal_multirobot_msgs/lib 
-Requires: message_runtime std_msgs geometry_msgs

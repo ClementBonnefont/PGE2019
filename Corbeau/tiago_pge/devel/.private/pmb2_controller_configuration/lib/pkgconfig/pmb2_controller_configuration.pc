@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration
-
-Name: pmb2_controller_configuration
-Description: Description of pmb2_controller_configuration
-Version: 3.0.10
-Cflags: 
-Libs: -L/home/pge/tiago_pge/devel/.private/pmb2_controller_configuration/lib 
-Requires: 

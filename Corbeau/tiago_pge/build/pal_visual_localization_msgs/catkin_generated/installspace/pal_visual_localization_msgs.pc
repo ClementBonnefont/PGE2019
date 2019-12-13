@@ -1,8 +1,0 @@
-prefix=/home/pge/tiago_pge/install
-
-Name: pal_visual_localization_msgs
-Description: Description of pal_visual_localization_msgs
-Version: 0.12.13
-Cflags: -I/home/pge/tiago_pge/install/include
-Libs: -L/home/pge/tiago_pge/install/lib 
-Requires: message_runtime

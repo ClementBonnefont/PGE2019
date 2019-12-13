@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/hey5_description/lib/pkgconfig/hey5_description.pc

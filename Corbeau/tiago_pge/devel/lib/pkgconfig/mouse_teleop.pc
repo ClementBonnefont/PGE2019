@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/mouse_teleop/lib/pkgconfig/mouse_teleop.pc

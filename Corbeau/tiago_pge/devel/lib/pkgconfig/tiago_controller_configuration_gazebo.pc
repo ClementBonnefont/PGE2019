@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/tiago_controller_configuration_gazebo/lib/pkgconfig/tiago_controller_configuration_gazebo.pc

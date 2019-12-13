@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_walking_msgs/share/gennodejs/ros/pal_walking_msgs/_index.js

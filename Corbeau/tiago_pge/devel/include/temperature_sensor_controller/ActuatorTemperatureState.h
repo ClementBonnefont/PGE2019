@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/temperature_sensor_controller/include/temperature_sensor_controller/ActuatorTemperatureState.h

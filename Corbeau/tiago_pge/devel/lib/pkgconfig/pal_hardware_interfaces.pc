@@ -1,1 +1,0 @@
-/home/pge/tiago_pge/devel/.private/pal_hardware_interfaces/lib/pkgconfig/pal_hardware_interfaces.pc
