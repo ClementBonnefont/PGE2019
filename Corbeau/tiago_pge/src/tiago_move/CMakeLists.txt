@@ -1,13 +1,16 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(tiago_move_arm_pylon)
+project(tiago_move)
+
+## Compile as C++11, supported in ROS Kinetic and newer
+# add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  moveit_ros_planning_interface
   roscpp
+  tiago_move_arm_pylon
   tf
 )
 
@@ -103,9 +106,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS include
-  LIBRARIES tiago_move_arm_pylon
-  CATKIN_DEPENDS geometry_msgs moveit_ros_planning_interface roscpp
+#  INCLUDE_DIRS include
+#  LIBRARIES tiago_move
+#  CATKIN_DEPENDS geometry_msgs roscpp tiago_move_arm_pylon
 #  DEPENDS system_lib
 )
 
@@ -116,14 +119,14 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-	include
- 	${catkin_INCLUDE_DIRS}
+# include
+  ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
- add_library(${PROJECT_NAME}
-		src/plan_arm_torso_ik_pylon.cpp
- )
+# add_library(${PROJECT_NAME}
+#   src/${PROJECT_NAME}/tiago_move.cpp
+# )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -133,7 +136,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(plan_arm_torso_ik_pylon src/plan_arm_torso_ik_pylon.cpp)
+add_executable(go_to_touch src/go_to_touch.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -143,12 +146,12 @@ add_executable(plan_arm_torso_ik_pylon src/plan_arm_torso_ik_pylon.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(plan_arm_torso_ik_pylon ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(go_to_touch ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(plan_arm_torso_ik_pylon
+target_link_libraries(go_to_touch
    ${catkin_LIBRARIES}
- )
+)
 
 #############
 ## Install ##
@@ -166,9 +169,9 @@ target_link_libraries(plan_arm_torso_ik_pylon
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-install(TARGETS plan_arm_torso_ik_pylon
+install(TARGETS go_to_touch
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
- )
+)
 
 ## Mark libraries for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_libraries.html
@@ -179,11 +182,11 @@ install(TARGETS plan_arm_torso_ik_pylon
 # )
 
 ## Mark cpp header files for installation
- install(DIRECTORY include/${PROJECT_NAME}/
-   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-   FILES_MATCHING PATTERN "*.h"
-   PATTERN ".svn" EXCLUDE
- )
+# install(DIRECTORY include/${PROJECT_NAME}/
+#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+#   FILES_MATCHING PATTERN "*.h"
+#   PATTERN ".svn" EXCLUDE
+# )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
@@ -197,7 +200,7 @@ install(TARGETS plan_arm_torso_ik_pylon
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_tiago_move_arm_pylon.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_tiago_move.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

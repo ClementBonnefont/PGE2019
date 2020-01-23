@@ -1,4 +1,4 @@
-roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=steel world:=pylon_office use_moveit_camera:=true
+//roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=steel world:=pylon_office use_moveit_camera:=true
 
 roslaunch tiago_2dnav_gazebo tiago_navigation.launch public_sim:=true world:=pylon_office end_effector:=pal-gripper
 
