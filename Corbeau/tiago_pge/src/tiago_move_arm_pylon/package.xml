@@ -58,6 +58,7 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>moveit_ros_planning_interface</exec_depend>
   <exec_depend>roscpp</exec_depend>
+  <build_depend>roslaunch</build_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

@@ -34,6 +34,11 @@ void go_to_point_base_footprint(move_base_msgs::MoveBaseGoal base_goal_pose_pylo
   ac.sendGoal(base_goal_pose_pylon_frame);
 }
 
+void pylonPoseCallback(const geometry_msgs::PoseStamped& msg)
+{
+  ROS_INFO("I heard something");
+}
+
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "plan_arm_torso_ik_pylon");
@@ -53,17 +58,20 @@ int main(int argc, char** argv)
   Move_tiago_arm tiago_arm;
   MoveBaseClient ac("move_base", true);
 
+  ros::NodeHandle nh("~");
+  ros::Subscriber sub = nh.subscribe("/aruco_single/pose", 1000, pylonPoseCallback);
+
   move_base_msgs::MoveBaseGoal base_goal_pose_pylon_frame0;
   base_goal_pose_pylon_frame0.target_pose.header.frame_id = "pylon";
   base_goal_pose_pylon_frame0.target_pose.pose.position.x = 0;
-  base_goal_pose_pylon_frame0.target_pose.pose.position.y = -2;
+  base_goal_pose_pylon_frame0.target_pose.pose.position.y = -1;
   base_goal_pose_pylon_frame0.target_pose.pose.position.z = 0;
   base_goal_pose_pylon_frame0.target_pose.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(0), 
                                               tiago_arm.degree_to_radian(0), tiago_arm.degree_to_radian(0));
 
   move_base_msgs::MoveBaseGoal base_goal_pose_pylon_frame1;
   base_goal_pose_pylon_frame1.target_pose.header.frame_id = "pylon";
-  base_goal_pose_pylon_frame1.target_pose.pose.position.x = 2;
+  base_goal_pose_pylon_frame1.target_pose.pose.position.x = 1;
   base_goal_pose_pylon_frame1.target_pose.pose.position.y = 0;
   base_goal_pose_pylon_frame1.target_pose.pose.position.z = 0;
   base_goal_pose_pylon_frame1.target_pose.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(0), 
@@ -72,14 +80,14 @@ int main(int argc, char** argv)
   move_base_msgs::MoveBaseGoal base_goal_pose_pylon_frame2;
   base_goal_pose_pylon_frame2.target_pose.header.frame_id = "pylon";
   base_goal_pose_pylon_frame2.target_pose.pose.position.x = 0;
-  base_goal_pose_pylon_frame2.target_pose.pose.position.y = 2;
+  base_goal_pose_pylon_frame2.target_pose.pose.position.y = 1;
   base_goal_pose_pylon_frame2.target_pose.pose.position.z = 0;
   base_goal_pose_pylon_frame2.target_pose.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(0), 
                                               tiago_arm.degree_to_radian(0), tiago_arm.degree_to_radian(180));
 
   move_base_msgs::MoveBaseGoal base_goal_pose_pylon_frame3;
   base_goal_pose_pylon_frame3.target_pose.header.frame_id = "pylon";
-  base_goal_pose_pylon_frame3.target_pose.pose.position.x = -2;
+  base_goal_pose_pylon_frame3.target_pose.pose.position.x = -1;
   base_goal_pose_pylon_frame3.target_pose.pose.position.y = 0;
   base_goal_pose_pylon_frame3.target_pose.pose.position.z = 0;
   base_goal_pose_pylon_frame3.target_pose.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(0), 
@@ -133,6 +141,7 @@ int main(int argc, char** argv)
   go_to_point_base_footprint(base_goal_pose_pylon_frame0,ac);
   tiago_arm.go_to_point_arm_tool_link(arm_goal_pose0);
 
-
-
+  ros::spin();
 }
+
+
