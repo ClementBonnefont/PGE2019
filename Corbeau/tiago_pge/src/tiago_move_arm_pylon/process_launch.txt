@@ -1,0 +1,30 @@
+//roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=steel world:=pylon_office use_moveit_camera:=true
+
+roslaunch tiago_2dnav_gazebo tiago_navigation.launch public_sim:=true world:=pylon_office end_effector:=pal-gripper
+
+rosrun pylon_world_tf pylon_world_tf_broadcaster
+
+rosparam load `rospack find tiago_move_arm_pylon`/config/tiago_octomap_motions.yaml
+
+rosrun tiago_move_arm_pylon plan_arm_torso_ik_pylon 0.508 -0.408 0.832 0.005, -0.052, 0.039
+
+
+##############################################
+pose_tiago_t0_base_world
+##############################################
+x = 0.754517
+y = 4.9
+z = 0
+roll = 0
+pitch = 0
+yaw = 2.844185
+
+##############################################
+pose_pylon_world
+##############################################
+x = 0.754517
+y = 5.833130
+z = 0.599991
+roll = 0
+pitch = 0
+yaw = -0.000002
