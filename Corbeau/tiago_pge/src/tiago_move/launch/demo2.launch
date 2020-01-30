@@ -1,14 +1,10 @@
 <launch>
 
-	<rosparam command="load" file="$(find tiago_move)/config/tiago_head_motions.yaml"/>
-	
-	<node pkg="play_motion" type="run_motion" name="run_motion" args="head_look_around"/>
-
 	<node pkg="aruco_ros" type="single" name="aruco_single">
 	<remap from="/camera_info" to="/xtion/rgb/camera_info" />
         <remap from="/image" to="/xtion/rgb/image_rect_color" />
 
-	<param name="rotate_marker_axis" value="true"/>
+	<param name="rotate_marker_axis" value="False"/>
 
         <param name="image_is_rectified" value="True"/>
         <param name="marker_size"        value="0.201"/>
@@ -19,7 +15,8 @@
         <param name="corner_refinement"  value="LINES" />
 	</node>
 
-	<node pkg = "tiago_move" type="go_to_touch" name="go_to_touch" launch-prefix="bash -c 'sleep 3; $0 $@'"/>
+	<node pkg = "tiago_move" type="go_to_touch" name="go_to_touch" launch-prefix="bash -c 'sleep 5; $0 $@'">
+	</node>
 
 
 </launch>

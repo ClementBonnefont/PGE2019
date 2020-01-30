@@ -19,7 +19,7 @@
         <param name="corner_refinement"  value="LINES" />
 	</node>
 
-	<node pkg = "tiago_move" type="go_to_touch" name="go_to_touch" launch-prefix="bash -c 'sleep 3; $0 $@'"/>
+	<node pkg = "tiago_move" type="go_to_touch" name="go_to_touch" launch-prefix="bash -c 'sleep 6; $0 $@'"/>
 
 
 </launch>

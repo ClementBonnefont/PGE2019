@@ -50,7 +50,10 @@ std::array<double,4> Generate_circular_poi::get_pt_proche(std::vector <std::vect
 	int indice; 
 
     for (int i = 0; i < cercle[0].size(); i++){
-		distance = pow(sqrt(cercle[0][i] - pointProche[0]), 2) + pow(sqrt(cercle[1][i] - pointProche[1]), 2);
+		if( cercle[0][i] - pointProche[0] == 0 || cercle[1][i] - pointProche[1] == 0)
+			std::cout << "Attention division par 0 !! cas a traiter" << std::endl;
+		distance = sqrt(pow(cercle[0][i] - pointProche[0], 2)) + sqrt(pow(cercle[1][i] - pointProche[1], 2));
+
 		if(distance < bestPt){
 			bestPt = distance;
 			indice = i;
@@ -79,7 +82,7 @@ std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector
 		std::cout << std::endl;
 		cptChemin1 = 0;
 
-		for(int i = (int) pointEntree[3]; i != (int) pointSortie[3] ; i = i+1 % cercle[0].size()){
+		for(int i = (int) pointEntree[3]; i != (int) pointSortie[3] ; i = ((i+1) % cercle[0].size())){
 
 			
 			chemin1[j][cptChemin1] = cercle[j][i];

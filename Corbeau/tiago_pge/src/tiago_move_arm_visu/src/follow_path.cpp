@@ -6,6 +6,7 @@
 #include <tf/transform_listener.h>
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
+#include <visualization_msgs/Marker.h>
 
 // Std C++ headers
 #include <string>
@@ -19,6 +20,11 @@
 
 using namespace tiago_move_arm_pylon;
 using namespace zone_ground_pylon;
+
+// define exemple des points pour une trajectoire 
+#define __NB_POINTS_BASE_FOOTPRINT__ 8
+#define __NB_POINTS_PATH__ 16
+
 
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
@@ -76,7 +82,80 @@ int main(int argc, char** argv)
   Generate_circular_poi gen_poi;
   MoveBaseClient ac("move_base", true);
 
-  ROS_INFO_STREAM("DEBUT DE GOTO TOUCH CERCLE");
+
+  ros::NodeHandle n; // node hadler et publisher pour l'affichage des points de passage du bras 
+  ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1); 
+  // CHANGER LE NOM DU PUBLISHER POUR FAIRE UN AFFICHAGE PAR COUCHE DES POINTS 
+
+
+  /*---------- LISTE DE POINTS DE PASSAGE -----------*/
+
+  // definition de la forme du marker de passage 
+  uint32_t formes = visualization_msgs::Marker::SPHERE_LIST;
+
+  visualization_msgs::Marker pointsPassage;
+  // Set the frame ID and timestamp.  See the TF tutorials for information on these.
+  pointsPassage.header.frame_id = "/pylon";
+  pointsPassage.header.stamp = ros::Time::now();
+
+  // Set du namespace et id du marker.  ID unique
+  // Attention si le meme namespace et id sont utilise, il y a ecrasement du precedent
+  pointsPassage.ns = "follow_path";
+  pointsPassage.id = 0;
+  // set le type de marqueur a vec la forme 
+  pointsPassage.type = formes; 
+
+  // ajout du marqueur sous le format action 
+  pointsPassage.action = visualization_msgs::Marker::ADD;
+
+  //setup de la taille du marker sur chaque axe 
+  pointsPassage.scale.x = 0.05;
+  pointsPassage.scale.y = 0.05; 
+  pointsPassage.scale.z = 0.05;
+  // de la couleur (entre 0 et 1)
+  pointsPassage.color.r = 0.0f;
+  pointsPassage.color.g = 0.0f;
+  pointsPassage.color.b = 1.0f; 
+  pointsPassage.color.a = 1.0; // couche alpha, si a 0 --> 100% de transparence  
+
+  // set de la duree du marker
+  pointsPassage.lifetime = ros::Duration();
+
+  /*---------- LISTE DE POINTS D APPROCHE BASE_FOOTPRINT -----------*/
+
+  // definition de la forme du marker de passage 
+  formes = visualization_msgs::Marker::CUBE_LIST;
+
+  visualization_msgs::Marker pointsApprocheBaseFootprint;
+  // Set the frame ID and timestamp.  See the TF tutorials for information on these.
+  pointsApprocheBaseFootprint.header.frame_id = "/pylon";
+  pointsApprocheBaseFootprint.header.stamp = ros::Time::now();
+
+  // Set du namespace et id du marker.  ID unique
+  // Attention si le meme namespace et id sont utilise, il y a ecrasement du precedent
+  pointsApprocheBaseFootprint.ns = "approche_to_follow_path";
+  pointsApprocheBaseFootprint.id = 1;
+  // set le type de marqueur a vec la forme 
+  pointsApprocheBaseFootprint.type = formes; 
+
+  // ajout du marqueur sous le format action 
+  pointsApprocheBaseFootprint.action = visualization_msgs::Marker::ADD;
+
+  //setup de la taille du marker sur chaque axe 
+  pointsApprocheBaseFootprint.scale.x = 0.15;
+  pointsApprocheBaseFootprint.scale.y = 0.15; 
+  pointsApprocheBaseFootprint.scale.z = 0.025;
+  // de la couleur (entre 0 et 1)
+  pointsApprocheBaseFootprint.color.r = 0.0f;
+  pointsApprocheBaseFootprint.color.g = 1.0f;
+  pointsApprocheBaseFootprint.color.b = 0.0f; 
+  pointsApprocheBaseFootprint.color.a = 1.0; // couche alpha, si a 0 --> 100% de transparence  
+
+  // set de la duree du marker
+  pointsApprocheBaseFootprint.lifetime = ros::Duration();
+
+
+  ROS_INFO_STREAM("DEBUT DE FOLLOW PATH");
 
 
   //map_pose
@@ -92,8 +171,35 @@ int main(int argc, char** argv)
   
   //generation d'un cercle 
   ROS_INFO_STREAM("GENERATION DU CERCLE EN COURS ...");
-  std::vector <std::vector<double> > cercle = gen_poi.generate_circle(8, 1, 0, 0, 0);
-  ROS_INFO_STREAM("GENERATION DU CERCLE FAITES");
+  std::vector <std::vector<double> > cercle = gen_poi.generate_circle(__NB_POINTS_BASE_FOOTPRINT__, 1.25, 0, 0, 0);
+ 
+
+  // creation de la liste de cubes 
+  //positionnement des markers dans le monde 
+  for(uint32_t i = 0; i < __NB_POINTS_BASE_FOOTPRINT__; ++i){
+    geometry_msgs::Point p;
+    p.x = cercle[0][i];
+    p.y = cercle[1][i];
+    p.z = 0;
+    pointsApprocheBaseFootprint.points.push_back(p);
+  }
+  ROS_INFO_STREAM("GENERATION DU CERCLE FAITE");
+
+
+  //generation d'une trajectoire plus petite que 
+  ROS_INFO_STREAM("GENERATION DU PATH EN COURS ...");
+  std::vector <std::vector<double> > pathToFollow = gen_poi.generate_circle(__NB_POINTS_PATH__, 0.85, 0, 0, 0);
+
+  // creation de la liste de spheres 
+  //positionnement des markers dans le monde 
+  for(uint32_t i = 0; i < __NB_POINTS_PATH__; ++i){
+    geometry_msgs::Point p;
+    p.x = pathToFollow[0][i];
+    p.y = pathToFollow[1][i];
+    p.z = pathToFollow[2][i];
+    pointsPassage.points.push_back(p);
+  }
+  ROS_INFO_STREAM("GENERATION DU PATH FAITE");
 
 
   geometry_msgs::PoseStamped arm_goal_pose;
@@ -102,7 +208,6 @@ int main(int argc, char** argv)
   arm_goal_pose.pose.position.y = 0.7;
   arm_goal_pose.pose.position.z = 0.5;
   arm_goal_pose.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(0, 0, 0);
-  ROS_INFO_STREAM("Merdouille");
 
 
   //base_footprint
@@ -135,7 +240,20 @@ int main(int argc, char** argv)
   
   std::vector <std::vector<double> > chemin = gen_poi.generate_traj_2pt_from_circle(cercle,pointOrigine,pointGoal);
 
-   ROS_INFO_STREAM("/* Après génération des chemins  */");
+  ROS_INFO_STREAM("/* Après génération des chemins  */");
+
+  // -----------------------AFFICHAGE ---------------------------------- //
+  // publication des markers 
+  while (marker_pub.getNumSubscribers() < 1){
+    if (!ros::ok()) {
+      return 0;
+    }
+    ROS_WARN_ONCE("Dans Rviz ajouter un marker pour visualiser les points");
+    sleep(1);
+  }
+  marker_pub.publish(pointsPassage); //publication de la liste des points de passage
+  marker_pub.publish(pointsApprocheBaseFootprint); //publication de la liste des points de passage
+  // ---------------------- FIN AFFICHAGE ----------------------------- // 
 
   move_base_msgs::MoveBaseGoal base_goal_pose_pylon_frame;
   base_goal_pose_pylon_frame.target_pose.header.frame_id = "pylon";

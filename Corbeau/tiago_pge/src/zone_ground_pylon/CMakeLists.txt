@@ -133,6 +133,7 @@ add_library(${PROJECT_NAME}
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(generate_circular_poi src/generate_circular_poi.cpp)
+add_executable(test_chemin src/test_chemin.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -144,8 +145,15 @@ add_executable(generate_circular_poi src/generate_circular_poi.cpp)
 ## same as for the library above
 add_dependencies(generate_circular_poi ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_dependencies(test_chemin ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+
 ## Specify libraries to link a library or executable target against
 target_link_libraries(generate_circular_poi
+${catkin_LIBRARIES}
+)
+
+target_link_libraries(test_chemin
 ${catkin_LIBRARIES}
 )
 
@@ -156,7 +164,9 @@ ${catkin_LIBRARIES}
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
-install(TARGETS generate_circular_poi
+install(TARGETS 
+	generate_circular_poi
+	test_chemin
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
