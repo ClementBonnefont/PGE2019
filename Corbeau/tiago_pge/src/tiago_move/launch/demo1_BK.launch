@@ -1,0 +1,30 @@
+<launch>
+
+	<rosparam command="load" file="/home/pge/tiago_pge/src/tiago_tutorials/tiago_moveit_tutorial/config/tiago_octomap_motions.yaml" />
+	
+	<node pkg="play_motion" type="run_motion" name="run_motion">
+	
+	<param name="motion_name" value="head_look_around"/>
+
+	</node>
+
+	<node pkg="aruco_ros" type="single" name="aruco_single">
+	<remap from="/camera_info" to="/stereo/left/camera_info" />
+        <remap from="/image" to="/stereo/left/image_rect_color" />
+
+	<param name="rotate_marker_axis" value="False"/>
+
+        <param name="image_is_rectified" value="True"/>
+        <param name="marker_size"        value="0.0201"/>
+        <param name="marker_id"          value="582"/>
+        <param name="reference_frame"    value="map"/>
+        <param name="camera_frame"       value="stereo_gazebo_lef_camera_optical_frame"/>
+        <param name="marker_frame"       value="pylon" />
+        <param name="corner_refinement"  value="LINES" />
+	</node>
+
+
+	<node pkg = "tiago_move" type="go_to_touch" name="go_to_touch" launch-prefix="bash -c 'sleep 5; $0 $@'">
+	</node>
+
+</launch>
