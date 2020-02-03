@@ -1,0 +1,19 @@
+<launch>
+
+	<node pkg="aruco_ros" type="single" name="aruco_single">	
+		<remap from="/camera_info" to="/xtion/rgb/camera_info" />
+		      <remap from="/image" to="/xtion/rgb/image_rect_color" />
+
+		<param name="rotate_marker_axis" value="false"/>
+		<param name="image_is_rectified" value="true"/>
+		<param name="marker_size"        value="0.201"/>
+		<param name="marker_id"          value="582"/>
+		<param name="reference_frame"    value="/map"/>
+		<param name="camera_frame"       value="/xtion_optical_frame"/>
+		<param name="marker_frame"       value="/pylon_qr" />
+		<param name="corner_refinement"  value="LINES" />
+	</node>
+
+	<node pkg="pylon_world_tf" type="pylon_world_tf_broadcaster" name="pylon_world_tf_broadcaster" />
+
+</launch>

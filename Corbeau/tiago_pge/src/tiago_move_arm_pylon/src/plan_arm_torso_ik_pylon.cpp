@@ -49,7 +49,7 @@ void Move_tiago_arm::go_to_point_arm_tool_link(geometry_msgs::PoseStamped goal_p
   nh.param("rate", rate_hz, 1.0);
   ros::Rate rate(rate_hz);
   tf::TransformListener tf;
-  std::string source_frameid = "pylon";
+  std::string source_frameid = goal_pose_pylon_frame.header.frame_id;
   std::string target_frameid = "base_footprint"; 
   geometry_msgs::PoseStamped goal_pose_base_footprint_frame;
 
@@ -114,28 +114,28 @@ int main(int argc, char** argv)
 {
   ros::init(argc, argv, "plan_arm_torso_ik_pylon");
 
-if ( argc < 7 )
-{
-  ROS_INFO(" ");
-  ROS_INFO("\tUsage:");
-  ROS_INFO(" ");
-  ROS_INFO("\trosrun tiago_move_arm_pylon plan_arm_torso_ik_pylon  x y z  r p y");
-  ROS_INFO(" ");
-  ROS_INFO("\twhere the list of arguments specify the target pose of /arm_tool_link expressed in /base_footprint");
-  ROS_INFO(" ");
-  return EXIT_FAILURE;
-}
+	if ( argc < 7 )
+	{
+		ROS_INFO(" ");
+		ROS_INFO("\tUsage:");
+		ROS_INFO(" ");
+		ROS_INFO("\trosrun tiago_move_arm_pylon plan_arm_torso_ik_pylon x y z r p y");
+		ROS_INFO(" ");
+		ROS_INFO("\twhere the list of arguments specify the target pose of /arm_tool_link expressed in /base_footprint");
+		ROS_INFO(" ");
+		return EXIT_FAILURE;
+	}
 
-Move_tiago_arm tiago_arm;
+	Move_tiago_arm tiago_arm;
 
-geometry_msgs::PoseStamped goal_pose_pylon_frame;
-goal_pose_pylon_frame.header.frame_id = "pylon";
-goal_pose_pylon_frame.pose.position.x = atof(argv[1]);
-goal_pose_pylon_frame.pose.position.y = atof(argv[2]);
-goal_pose_pylon_frame.pose.position.z = atof(argv[3]);
-goal_pose_pylon_frame.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(atof(argv[4])), tiago_arm.degree_to_radian(atof(argv[5])), tiago_arm.degree_to_radian(atof(argv[6])));
+	geometry_msgs::PoseStamped goal_pose_pylon_frame;
+	goal_pose_pylon_frame.header.frame_id = "base_footprint";
+	goal_pose_pylon_frame.pose.position.x = atof(argv[1]);
+	goal_pose_pylon_frame.pose.position.y = atof(argv[2]);
+	goal_pose_pylon_frame.pose.position.z = atof(argv[3]);
+	goal_pose_pylon_frame.pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(tiago_arm.degree_to_radian(atof(argv[4])), tiago_arm.degree_to_radian(atof(argv[5])), tiago_arm.degree_to_radian(atof(argv[6])));
 
-tiago_arm.go_to_point_arm_tool_link(goal_pose_pylon_frame);
+	tiago_arm.go_to_point_arm_tool_link(goal_pose_pylon_frame);
 
   return EXIT_SUCCESS;
 
