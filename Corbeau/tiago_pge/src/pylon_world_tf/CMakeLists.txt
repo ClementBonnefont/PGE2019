@@ -10,6 +10,7 @@ project(pylon_world_tf)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
+  moveit_ros_planning_interface
 )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
@@ -119,6 +120,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+	${Eigen_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library

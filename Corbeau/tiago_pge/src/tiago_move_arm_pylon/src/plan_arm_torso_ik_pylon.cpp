@@ -6,43 +6,6 @@ float Move_tiago_arm::degree_to_radian(float degree) {
   return (degree*M_PI)/180.0;
 }
 
-void Move_tiago_arm::add_collision() {
-  //Add obstacle
-  moveit_msgs::CollisionObject collision_object;
-  collision_object.header.frame_id = "pylon";
-
-  /* The id of the object is used to identify it. */
-  collision_object.id = "box1";
-
-  /* Define a box to add to the world. */
-  shape_msgs::SolidPrimitive primitive;
-  primitive.type = primitive.CYLINDER;
-  primitive.dimensions.resize(2);
-  primitive.dimensions[primitive.CYLINDER_HEIGHT] = 5;
-  primitive.dimensions[primitive.CYLINDER_RADIUS] = 0.1;
-
-  /* A pose for the box (specified relative to frame_id) */
-  geometry_msgs::Pose box_pose;
-  box_pose.orientation.w = 1.0;
-  box_pose.position.x =  1;
-  box_pose.position.y = 1;
-  box_pose.position.z =  0;
-
-  collision_object.primitives.push_back(primitive);
-  collision_object.primitive_poses.push_back(box_pose);
-  collision_object.operation = collision_object.ADD;
-
-  std::vector<moveit_msgs::CollisionObject> collision_objects;
-  collision_objects.push_back(collision_object);
-
-  ROS_INFO("Add an object into the world");
-  moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
-  planning_scene_interface.addCollisionObjects(collision_objects);
-
-  /* Sleep so we have time to see the object in RViz */
-  sleep(2.0);
-}
-
 void Move_tiago_arm::go_to_point_arm_tool_link(geometry_msgs::PoseStamped goal_pose_pylon_frame) {
   ros::NodeHandle nh("~");
   double rate_hz;
