@@ -1,0 +1,6 @@
+ros_controllers/position_controllers
+/home/pge/tiago_pge/devel/.private/position_controllers/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
+/home/pge/tiago_pge/devel/.private/position_controllers/lib/libposition_controllers.so /home/pge/tiago_pge/devel/lib/libposition_controllers.so
+/home/pge/tiago_pge/devel/.private/position_controllers/lib/pkgconfig/position_controllers.pc /home/pge/tiago_pge/devel/lib/pkgconfig/position_controllers.pc
+/home/pge/tiago_pge/devel/.private/position_controllers/share/position_controllers/cmake/position_controllersConfig-version.cmake /home/pge/tiago_pge/devel/share/position_controllers/cmake/position_controllersConfig-version.cmake
+/home/pge/tiago_pge/devel/.private/position_controllers/share/position_controllers/cmake/position_controllersConfig.cmake /home/pge/tiago_pge/devel/share/position_controllers/cmake/position_controllersConfig.cmake

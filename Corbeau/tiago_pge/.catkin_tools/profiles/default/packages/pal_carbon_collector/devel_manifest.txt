@@ -1,0 +1,6 @@
+pal_statistics/pal_carbon_collector
+/home/pge/tiago_pge/devel/.private/pal_carbon_collector/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
+/home/pge/tiago_pge/devel/.private/pal_carbon_collector/lib/pkgconfig/pal_carbon_collector.pc /home/pge/tiago_pge/devel/lib/pkgconfig/pal_carbon_collector.pc
+/home/pge/tiago_pge/devel/.private/pal_carbon_collector/lib/python2.7/dist-packages/pal_carbon_collector/__init__.py /home/pge/tiago_pge/devel/lib/python2.7/dist-packages/pal_carbon_collector/__init__.py
+/home/pge/tiago_pge/devel/.private/pal_carbon_collector/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig.cmake /home/pge/tiago_pge/devel/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig.cmake
+/home/pge/tiago_pge/devel/.private/pal_carbon_collector/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig-version.cmake /home/pge/tiago_pge/devel/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig-version.cmake

@@ -1,0 +1,5 @@
+test
+/home/pge/tiago_pge/devel/.private/test/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
+/home/pge/tiago_pge/devel/.private/test/lib/pkgconfig/test.pc /home/pge/tiago_pge/devel/lib/pkgconfig/test.pc
+/home/pge/tiago_pge/devel/.private/test/share/test/cmake/testConfig-version.cmake /home/pge/tiago_pge/devel/share/test/cmake/testConfig-version.cmake
+/home/pge/tiago_pge/devel/.private/test/share/test/cmake/testConfig.cmake /home/pge/tiago_pge/devel/share/test/cmake/testConfig.cmake
