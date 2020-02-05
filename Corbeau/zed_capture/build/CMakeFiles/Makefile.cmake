@@ -60,5 +60,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ZED_Project.dir/DependInfo.cmake"
+  "CMakeFiles/zed_capture.dir/DependInfo.cmake"
   )

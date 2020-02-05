@@ -1,4 +1,5 @@
 #include <iostream>
+#include <signal.h>
 #include <string>
 
 #include <sl/Camera.hpp>
@@ -17,6 +18,11 @@ using namespace sl;
 * 
 * For the UPSSITECH PGE 2019-2020
 **/
+
+// TODO_TODAY : Check closing ZED after Ctrl + C
+
+// Create a ZED camera object
+Camera zed;
 
 /**
 * Conversion function between sl::Mat and cv::Mat
@@ -41,11 +47,23 @@ cv::Mat slMat2cvMat(Mat& input) {
     return cv::Mat(input.getHeight(), input.getWidth(), cv_type, input.getPtr<sl::uchar1>(MEM::MEM_CPU));
 }
 
+void handler_ctrl_c(int s) {
+	printf("Closing application\n");
+	zed.close();
+	
+	exit(1);
+}
+
 int main(int argc, char **argv) {
+	// Intercept the Ctrl C command
+	struct sigaction sigIntHandler;
  	
-    // Create a ZED camera object
-    Camera zed;
- 	
+	sigIntHandler.sa_handler = handler_ctrl_c;
+   	sigemptyset(&sigIntHandler.sa_mask);
+   	sigIntHandler.sa_flags = 0;
+	
+	sigaction(SIGINT, &sigIntHandler, NULL);
+	
     // Set configuration parameters
 	InitParameters init_params;
 	init_params.camera_resolution = RESOLUTION_HD1080;
@@ -66,7 +84,9 @@ int main(int argc, char **argv) {
     printf("Hello! This is my serial number: %d\n", zed_serial);
 	
 	sl::Mat zed_image_left;
+	sl::Mat zed_image_right;
 	sl::Mat zed_depth_map;
+	sl::Mat zed_depth_measure;
 	
 	printf("Camera launched, press 'q' to stop execution\n");
 	printf("Press 'c' to take a capture\n");
@@ -81,16 +101,25 @@ int main(int argc, char **argv) {
 		if(key == 'c') {
 			// A new image and depth is available if grab() returns SUCCESS
 			if (zed.grab() == SUCCESS) {
+				printf("Capture done\n");
 				// Retrieve left image
 				zed.retrieveImage(zed_image_left, VIEW::VIEW_LEFT);
 				
+				// Retrieve right image
+				zed.retrieveImage(zed_image_right, VIEW::VIEW_RIGHT);
+				
 				// Retrieve depth image
-				zed.retrieveImage(zed_depth_map,VIEW::VIEW_DEPTH);
+				zed.retrieveImage(zed_depth_map, VIEW::VIEW_DEPTH);
+				
+				// Retrieve depth image
+				zed.retrieveMeasure(zed_depth_measure, MEASURE::MEASURE_DEPTH);
 			}
 			
 			// Convert sl::Mat to cv::Mat
 			cv::Mat ocv_image_left = slMat2cvMat(zed_image_left);
+			cv::Mat ocv_image_right = slMat2cvMat(zed_image_right);
 			cv::Mat ocv_depth_map = slMat2cvMat(zed_depth_map);
+			cv::Mat ocv_depth_measure = slMat2cvMat(zed_depth_measure);
 			
 			// Display to screen
 			/*
@@ -101,8 +130,16 @@ int main(int argc, char **argv) {
 			*/
 			
 			// Write images on disk
-			imwrite("Images/Image_left_" + std::to_string(counter) + ".png", ocv_image_left);
-			imwrite("Images/Depth_map_" + std::to_string(counter) + ".png", ocv_depth_map);
+			imwrite("Images/Left/Image_left_" + std::to_string(counter) + ".png", ocv_image_left);
+			imwrite("Images/Right/Image_right_" + std::to_string(counter) + ".png", ocv_image_right);
+			imwrite("Images/Depth/Depth_map_" + std::to_string(counter) + ".png", ocv_depth_map);
+			
+			// Write depth measure on disk
+			/*
+			cv::FileStorage storage("DepthMeasure/Depth_measure_" + std::to_string(counter) + ".yml", cv::FileStorage::WRITE);
+			storage << "ocv_depth_measure" << ocv_depth_measure;
+			storage.release();
+			*/
 			
 			printf("Images number %d saved on disk\n", counter);
 			counter++;

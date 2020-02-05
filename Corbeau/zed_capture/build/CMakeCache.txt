@@ -136,7 +136,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ZED_Project
+CMAKE_PROJECT_NAME:STATIC=zed_capture
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -338,6 +338,12 @@ ZED_Project_BINARY_DIR:STATIC=/home/jetson/zed_capture/build
 
 //Value Computed by CMake
 ZED_Project_SOURCE_DIR:STATIC=/home/jetson/zed_capture
+
+//Value Computed by CMake
+zed_capture_BINARY_DIR:STATIC=/home/jetson/zed_capture/build
+
+//Value Computed by CMake
+zed_capture_SOURCE_DIR:STATIC=/home/jetson/zed_capture
 
 
 ########################

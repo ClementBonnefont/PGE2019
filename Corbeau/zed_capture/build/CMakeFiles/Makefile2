@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/jetson/zed_capture
 CMAKE_BINARY_DIR = /home/jetson/zed_capture/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/ZED_Project.dir
+# Target rules for target CMakeFiles/zed_capture.dir
 
 # All Build rule for target.
-CMakeFiles/ZED_Project.dir/all:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/depend
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jetson/zed_capture/build/CMakeFiles --progress-num=1,2 "Built target ZED_Project"
-.PHONY : CMakeFiles/ZED_Project.dir/all
+CMakeFiles/zed_capture.dir/all:
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/depend
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jetson/zed_capture/build/CMakeFiles --progress-num=1,2 "Built target zed_capture"
+.PHONY : CMakeFiles/zed_capture.dir/all
 
 # Include target in all.
-all: CMakeFiles/ZED_Project.dir/all
+all: CMakeFiles/zed_capture.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ZED_Project.dir/rule: cmake_check_build_system
+CMakeFiles/zed_capture.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/zed_capture/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ZED_Project.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/zed_capture.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/zed_capture/build/CMakeFiles 0
-.PHONY : CMakeFiles/ZED_Project.dir/rule
+.PHONY : CMakeFiles/zed_capture.dir/rule
 
 # Convenience name for target.
-ZED_Project: CMakeFiles/ZED_Project.dir/rule
+zed_capture: CMakeFiles/zed_capture.dir/rule
 
-.PHONY : ZED_Project
-
-# clean rule for target.
-CMakeFiles/ZED_Project.dir/clean:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/clean
-.PHONY : CMakeFiles/ZED_Project.dir/clean
+.PHONY : zed_capture
 
 # clean rule for target.
-clean: CMakeFiles/ZED_Project.dir/clean
+CMakeFiles/zed_capture.dir/clean:
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/clean
+.PHONY : CMakeFiles/zed_capture.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/zed_capture.dir/clean
 
 .PHONY : clean
 

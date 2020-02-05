@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ZED_Project
+# Target rules for targets named zed_capture
 
 # Build rule for target.
-ZED_Project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ZED_Project
-.PHONY : ZED_Project
+zed_capture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zed_capture
+.PHONY : zed_capture
 
 # fast build rule for target.
-ZED_Project/fast:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/build
-.PHONY : ZED_Project/fast
+zed_capture/fast:
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/build
+.PHONY : zed_capture/fast
 
 src/capture.o: src/capture.cpp.o
 
@@ -129,7 +129,7 @@ src/capture.o: src/capture.cpp.o
 
 # target to build an object file
 src/capture.cpp.o:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/src/capture.cpp.o
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/src/capture.cpp.o
 .PHONY : src/capture.cpp.o
 
 src/capture.i: src/capture.cpp.i
@@ -138,7 +138,7 @@ src/capture.i: src/capture.cpp.i
 
 # target to preprocess a source file
 src/capture.cpp.i:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/src/capture.cpp.i
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/src/capture.cpp.i
 .PHONY : src/capture.cpp.i
 
 src/capture.s: src/capture.cpp.s
@@ -147,7 +147,7 @@ src/capture.s: src/capture.cpp.s
 
 # target to generate assembly for a file
 src/capture.cpp.s:
-	$(MAKE) -f CMakeFiles/ZED_Project.dir/build.make CMakeFiles/ZED_Project.dir/src/capture.cpp.s
+	$(MAKE) -f CMakeFiles/zed_capture.dir/build.make CMakeFiles/zed_capture.dir/src/capture.cpp.s
 .PHONY : src/capture.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ZED_Project"
+	@echo "... zed_capture"
 	@echo "... edit_cache"
 	@echo "... src/capture.o"
 	@echo "... src/capture.i"
