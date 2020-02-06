@@ -19,9 +19,7 @@ namespace tiago_move_arm_pylon
     {
     public:
         void go_to_point_arm_tool_link(geometry_msgs::PoseStamped goal_pose_pylon_frame);
-        void add_collision();
-        float degree_to_radian(float degree);
-        
+        float degree_to_radian(float degree);        
     };
 
 }
