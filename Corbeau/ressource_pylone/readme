@@ -6,11 +6,14 @@
 #
 #.
 #├── CAO_pylone_soures
+#│   ├── mesh_echelle_reduite_pylone.stl
+#│   ├── mesh_taille_reelle_pylone.stl
 #│   ├── pylone_echelle.dae
 #│   ├── Pylône.IGS
 #│   ├── Pylône.STEP
 #│   ├── pylone_test_collada.dae
 #│   └── readme
+#|
 #├── pylone_echelle
 #│   ├── material
 #│   │   └── texture_rouille.jpg
