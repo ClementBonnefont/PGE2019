@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(tiago_move_arm_visu)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -15,6 +15,7 @@ find_package(catkin REQUIRED
   zone_ground_pylon
   move_base_msgs
   visualization_msgs
+  tiago_move_arm_visu
 )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
@@ -109,11 +110,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES tiago_move_arm_visu
-#  CATKIN_DEPENDS other_catkin_pkg
+  INCLUDE_DIRS include
+  LIBRARIES tiago_move_arm_visu
+  CATKIN_DEPENDS roscpp
 #  DEPENDS system_lib
-)
+) 
 
 ###########
 ## Build ##
@@ -122,14 +123,14 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+ include
  ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/tiago_move_arm_visu.cpp
-# )
+add_library(${PROJECT_NAME}
+  src/CollisionBox.cpp
+)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -140,7 +141,9 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/tiago_move_arm_visu_node.cpp)
-add_executable(follow_path src/follow_path.cpp)
+add_executable(follow_path_simple src/follow_path_simple.cpp)
+add_executable(follow_path_without_arm src/follow_path_without_arm.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,7 +155,8 @@ add_executable(follow_path src/follow_path.cpp)
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-add_dependencies(follow_path ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(follow_path_simple ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(follow_path_without_arm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
@@ -160,9 +164,9 @@ add_dependencies(follow_path ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORT
 #   ${catkin_LIBRARIES}
 # )
 
-target_link_libraries(follow_path
-   ${catkin_LIBRARIES}
-)
+target_link_libraries(follow_path_simple ${catkin_LIBRARIES})
+target_link_libraries(follow_path_without_arm ${catkin_LIBRARIES})
+
 
 #############
 ## Install ##
@@ -178,7 +182,9 @@ target_link_libraries(follow_path
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-install(TARGETS follow_path
+install(TARGETS
+        follow_path_simple
+        follow_path_without_arm
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -198,11 +204,11 @@ install(TARGETS follow_path
 # )
 
 ## Mark cpp header files for installation
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
+ install(DIRECTORY include/${PROJECT_NAME}/
+   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+   FILES_MATCHING PATTERN "*.h"
+   PATTERN ".svn" EXCLUDE
+ )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
