@@ -1,5 +1,0 @@
-ros_control/controller_interface
-/home/pge/tiago_pge/devel/.private/controller_interface/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/controller_interface/lib/pkgconfig/controller_interface.pc /home/pge/tiago_pge/devel/lib/pkgconfig/controller_interface.pc
-/home/pge/tiago_pge/devel/.private/controller_interface/share/controller_interface/cmake/controller_interfaceConfig.cmake /home/pge/tiago_pge/devel/share/controller_interface/cmake/controller_interfaceConfig.cmake
-/home/pge/tiago_pge/devel/.private/controller_interface/share/controller_interface/cmake/controller_interfaceConfig-version.cmake /home/pge/tiago_pge/devel/share/controller_interface/cmake/controller_interfaceConfig-version.cmake

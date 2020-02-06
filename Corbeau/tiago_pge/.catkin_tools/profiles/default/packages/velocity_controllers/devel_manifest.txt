@@ -1,6 +1,0 @@
-ros_controllers/velocity_controllers
-/home/pge/tiago_pge/devel/.private/velocity_controllers/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/velocity_controllers/lib/libvelocity_controllers.so /home/pge/tiago_pge/devel/lib/libvelocity_controllers.so
-/home/pge/tiago_pge/devel/.private/velocity_controllers/lib/pkgconfig/velocity_controllers.pc /home/pge/tiago_pge/devel/lib/pkgconfig/velocity_controllers.pc
-/home/pge/tiago_pge/devel/.private/velocity_controllers/share/velocity_controllers/cmake/velocity_controllersConfig-version.cmake /home/pge/tiago_pge/devel/share/velocity_controllers/cmake/velocity_controllersConfig-version.cmake
-/home/pge/tiago_pge/devel/.private/velocity_controllers/share/velocity_controllers/cmake/velocity_controllersConfig.cmake /home/pge/tiago_pge/devel/share/velocity_controllers/cmake/velocity_controllersConfig.cmake

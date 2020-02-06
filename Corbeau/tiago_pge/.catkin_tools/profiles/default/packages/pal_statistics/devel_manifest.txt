@@ -1,7 +1,0 @@
-pal_statistics/pal_statistics
-/home/pge/tiago_pge/devel/.private/pal_statistics/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/pal_statistics/lib/libpal_statistics.so /home/pge/tiago_pge/devel/lib/libpal_statistics.so
-/home/pge/tiago_pge/devel/.private/pal_statistics/lib/pkgconfig/pal_statistics.pc /home/pge/tiago_pge/devel/lib/pkgconfig/pal_statistics.pc
-/home/pge/tiago_pge/devel/.private/pal_statistics/lib/python2.7/dist-packages/pal_statistics/__init__.py /home/pge/tiago_pge/devel/lib/python2.7/dist-packages/pal_statistics/__init__.py
-/home/pge/tiago_pge/devel/.private/pal_statistics/share/pal_statistics/cmake/pal_statisticsConfig-version.cmake /home/pge/tiago_pge/devel/share/pal_statistics/cmake/pal_statisticsConfig-version.cmake
-/home/pge/tiago_pge/devel/.private/pal_statistics/share/pal_statistics/cmake/pal_statisticsConfig.cmake /home/pge/tiago_pge/devel/share/pal_statistics/cmake/pal_statisticsConfig.cmake

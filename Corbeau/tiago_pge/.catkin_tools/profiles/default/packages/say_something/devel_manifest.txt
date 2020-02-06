@@ -1,5 +1,0 @@
-tiago_tutorials/say_something
-/home/pge/tiago_pge/devel/.private/say_something/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/say_something/lib/pkgconfig/say_something.pc /home/pge/tiago_pge/devel/lib/pkgconfig/say_something.pc
-/home/pge/tiago_pge/devel/.private/say_something/share/say_something/cmake/say_somethingConfig.cmake /home/pge/tiago_pge/devel/share/say_something/cmake/say_somethingConfig.cmake
-/home/pge/tiago_pge/devel/.private/say_something/share/say_something/cmake/say_somethingConfig-version.cmake /home/pge/tiago_pge/devel/share/say_something/cmake/say_somethingConfig-version.cmake

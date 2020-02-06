@@ -1,7 +1,0 @@
-ros_controllers/four_wheel_steering_controller
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/cmake.lock /home/pge/tiago_pge/devel/./cmake.lock
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/lib/libfour_wheel_steering_controller.so /home/pge/tiago_pge/devel/lib/libfour_wheel_steering_controller.so
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/lib/pkgconfig/four_wheel_steering_controller.pc /home/pge/tiago_pge/devel/lib/pkgconfig/four_wheel_steering_controller.pc
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/lib/four_wheel_steering_controller/four_wheel_steering /home/pge/tiago_pge/devel/lib/four_wheel_steering_controller/four_wheel_steering
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig-version.cmake /home/pge/tiago_pge/devel/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig-version.cmake
-/home/pge/tiago_pge/devel/.private/four_wheel_steering_controller/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig.cmake /home/pge/tiago_pge/devel/share/four_wheel_steering_controller/cmake/four_wheel_steering_controllerConfig.cmake
