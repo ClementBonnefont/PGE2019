@@ -98,9 +98,9 @@ int main(int argc, char **argv) {
 	cv::Mat emptyMat(400, 300, CV_64F);
 	cv::imshow("Image", emptyMat);
 	while(key != 'q') {
-		if(key == 'c') {
-			// A new image and depth is available if grab() returns SUCCESS
-			if (zed.grab() == SUCCESS) {
+		// A new image and depth is available if grab() returns SUCCESS
+		if (zed.grab() == SUCCESS) {
+			if(key == 'c') {
 				printf("Capture done\n");
 				// Retrieve left image
 				zed.retrieveImage(zed_image_left, VIEW::VIEW_LEFT);
@@ -113,40 +113,38 @@ int main(int argc, char **argv) {
 				
 				// Retrieve depth image
 				zed.retrieveMeasure(zed_depth_measure, MEASURE::MEASURE_DEPTH);
+			
+				// Convert sl::Mat to cv::Mat
+				cv::Mat ocv_image_left = slMat2cvMat(zed_image_left);
+				cv::Mat ocv_image_right = slMat2cvMat(zed_image_right);
+				cv::Mat ocv_depth_map = slMat2cvMat(zed_depth_map);
+				cv::Mat ocv_depth_measure = slMat2cvMat(zed_depth_measure);
+				
+				// Display to screen
+				/*
+				cv::imshow("Image", ocv_image_left);
+				cv::imshow("Depth", ocv_depth_map);
+				cv::waitKey(0);
+				cv::destroyAllWindows();
+				*/
+				
+				// Write images on disk
+				imwrite("Images/Left/Image_left_" + std::to_string(counter) + ".png", ocv_image_left);
+				imwrite("Images/Right/Image_right_" + std::to_string(counter) + ".png", ocv_image_right);
+				imwrite("Images/Depth/Depth_map_" + std::to_string(counter) + ".png", ocv_depth_map);
+				
+				// Write depth measure on disk
+				cv::FileStorage storage("DepthMeasure/Depth_measure_" + std::to_string(counter) + ".yml", cv::FileStorage::WRITE);
+				storage << "ocv_depth_measure" << ocv_depth_measure;
+				storage.release();
+				
+				printf("Images number %d saved on disk\n", counter);
+				counter++;
 			}
-			
-			// Convert sl::Mat to cv::Mat
-			cv::Mat ocv_image_left = slMat2cvMat(zed_image_left);
-			cv::Mat ocv_image_right = slMat2cvMat(zed_image_right);
-			cv::Mat ocv_depth_map = slMat2cvMat(zed_depth_map);
-			cv::Mat ocv_depth_measure = slMat2cvMat(zed_depth_measure);
-			
-			// Display to screen
-			/*
-			cv::imshow("Image", ocv_image_left);
-			cv::imshow("Depth", ocv_depth_map);
-			cv::waitKey(0);
-			cv::destroyAllWindows();
-			*/
-			
-			// Write images on disk
-			imwrite("Images/Left/Image_left_" + std::to_string(counter) + ".png", ocv_image_left);
-			imwrite("Images/Right/Image_right_" + std::to_string(counter) + ".png", ocv_image_right);
-			imwrite("Images/Depth/Depth_map_" + std::to_string(counter) + ".png", ocv_depth_map);
-			
-			// Write depth measure on disk
-			/*
-			cv::FileStorage storage("DepthMeasure/Depth_measure_" + std::to_string(counter) + ".yml", cv::FileStorage::WRITE);
-			storage << "ocv_depth_measure" << ocv_depth_measure;
-			storage.release();
-			*/
-			
-			printf("Images number %d saved on disk\n", counter);
-			counter++;
-		}
 		
-		// Handle key event
-        key = cv::waitKey(10);
+			// Handle key event
+        	key = cv::waitKey(100);
+		}
 	}
 	
     // Close the camera
