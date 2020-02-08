@@ -49,10 +49,19 @@ std::array<double,4> Generate_circular_poi::get_pt_proche(std::vector <std::vect
 	double distance;
 	int indice; 
 
+	double soustractionA; 
+	double soustractionB;
+
     for (int i = 0; i < cercle[0].size(); i++){
-		if( cercle[0][i] - pointProche[0] == 0 || cercle[1][i] - pointProche[1] == 0)
-			std::cout << "Attention division par 0 !! cas a traiter" << std::endl;
-		distance = sqrt(pow(cercle[0][i] - pointProche[0], 2)) + sqrt(pow(cercle[1][i] - pointProche[1], 2));
+		// on precalcule les soustraction pour tester 
+		soustractionA = cercle[0][i] - pointProche[0];
+		soustractionB = cercle[1][i] - pointProche[1];
+
+		// pour traiter le cas de la racine de 0 
+		if(soustractionA == 0 && soustractionB == 0) // les deux
+			distance = 0;
+		else // aucune 
+			distance = sqrt(pow(soustractionA, 2) + (pow(soustractionB, 2)));
 
 		if(distance < bestPt){
 			bestPt = distance;
@@ -74,31 +83,30 @@ std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector
                                     std::array<double,4> pointSortie){
     
 
-    std::vector <std::vector<double> > chemin1(3,std::vector<double>(cercle[0].size())); // (1, std::vector<double>(3));
+    std::vector <std::vector<double> > chemin1(3,std::vector<double>()); // (1, std::vector<double>(3));
 
 	int cptChemin1;
-	std::cout << "Chemin num 1 : ";
+	//std::cout << "Chemin num 1 : ";
 	for(int j = 0; j < 3; j++){
-		std::cout << std::endl;
+		//std::cout << std::endl;
 		cptChemin1 = 0;
 
 		for(int i = (int) pointEntree[3]; i != (int) pointSortie[3] ; i = ((i+1) % cercle[0].size())){
 
 			
-			chemin1[j][cptChemin1] = cercle[j][i];
+			chemin1[j].push_back(cercle[j][i]);
 			//std::cout << "points " << points[j][i] << std::endl << "chemin " << chemin1[j][cptChemin1] << std::endl;
 			cptChemin1++;
 			
 		}
 	}
 	
-	std::cout << std::endl;
+	// std::cout << std::endl;
 
-	
-	std::vector <std::vector<double> > chemin2(3,std::vector<double>(cercle[0].size())); 
+	std::vector <std::vector<double> > chemin2(3,std::vector<double>()); 
 
 	int cptChemin2;
-	std::cout << "Chemin num 2 : ";
+	//std::cout << "Chemin num 2 : ";
 	for(int j = 0; j < 3; j++){
 		std::cout << std::endl;
 		cptChemin2 = 0;
@@ -109,8 +117,8 @@ std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector
 				i = cercle[0].size();
 			}
 
-			chemin2[j][cptChemin2] = cercle[j][i];
-			//std::cout << "points " << points[j][i] << std::endl << "chemin " << chemin2[j][cptChemin2] << std::endl;
+			chemin2[j].push_back(cercle[j][i]);
+			//std::cout << "points " << cercle[j][i] << std::endl << "chemin " << chemin2[j][cptChemin2] << std::endl;
 			cptChemin2++;
 			
 		}
@@ -147,8 +155,6 @@ int main( int argc, char** argv )
     std::array<double,3> pointGoal    = { {-20,30,0} };
 
     std::vector <std::vector<double> > chemin = gen.generate_traj_2pt_from_circle(cercle, pointOrigine,pointGoal);
-
-    std::cout << std::endl << chemin.size() << std::endl;
 
     for(int i = 0; i < chemin[0].size(); i++){
             std::cout << std::endl;

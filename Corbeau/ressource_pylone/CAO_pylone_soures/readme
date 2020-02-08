@@ -37,4 +37,19 @@
 # Le modele transforme doit rester au format .dae
 # (pylone_echelle.dae)
 #
+# ------------Maillage du modèle STL-------------
+# Pour travailler sur la génération trajectoire  
+# a l'aide du modele CAO, on doit disposer de
+# fichiers mailles. La conversion en STL permet 
+# de raffiner le nombre de triangle du modele CAO. 
+#
+# Le fichier STL sera ensuite injecte en entree 
+# du script python "stl2polygon" convertissant un
+# fichier texte en ".m" type armada
+# (liste de polygone)
+# Le fichier '.m' ainsi genere permet d'alimenter
+# le programme de path planning d'Armada pour 
+# genere la trajectoire 
+#
+
 
