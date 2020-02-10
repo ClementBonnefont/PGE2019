@@ -69,6 +69,7 @@ int main(int argc, char **argv) {
 	init_params.camera_resolution = RESOLUTION_HD1080;
 	init_params.depth_mode = DEPTH_MODE::DEPTH_MODE_ULTRA;
     init_params.coordinate_units = UNIT::UNIT_METER;
+	init_params.sensing_mode = SENSING_MODE::SENSING_MODE_FILL;
 	init_params.camera_fps = 30;
  	
     // Open the camera
