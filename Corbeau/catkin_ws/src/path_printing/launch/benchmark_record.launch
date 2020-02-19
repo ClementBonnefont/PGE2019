@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+
+
+  <node name="rovio_record" pkg="path_printing" type="record_odom" args="/rovio/odometry rovio_record.txt" /> 
+  <!--<node name="rovio_record" pkg="path_printing" type="record_odom"> 
+    <param name="odometry_topic_name" value="/rovio/odometry"/>
+    <param name="file_name" value="rovio.txt"/>
+  </node>-->
+
+  <node name="perfect_odom_record" pkg="path_printing" type="record_odom" args="/control_odom traj_record.txt" /> 
+
+
+</launch>

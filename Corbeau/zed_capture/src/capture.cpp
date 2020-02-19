@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
 	init_params.camera_resolution = RESOLUTION_HD1080;
 	init_params.depth_mode = DEPTH_MODE::DEPTH_MODE_ULTRA;
     init_params.coordinate_units = UNIT::UNIT_METER;
-	init_params.sensing_mode = SENSING_MODE::SENSING_MODE_FILL;
+	//init_params.sensing_mode = SENSING_MODE::SENSING_MODE_FILL;
 	init_params.camera_fps = 30;
  	
     // Open the camera
@@ -138,7 +138,7 @@ int main(int argc, char **argv) {
 				cv::FileStorage storage("DepthMeasure/Depth_measure_" + std::to_string(counter) + ".yml", cv::FileStorage::WRITE);
 				storage << "ocv_depth_measure" << ocv_depth_measure;
 				storage.release();
-				
+
 				printf("Images number %d saved on disk\n", counter);
 				counter++;
 			}
