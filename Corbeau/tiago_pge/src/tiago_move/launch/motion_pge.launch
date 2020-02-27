@@ -1,5 +1,0 @@
-<launch>
-
-	<rosparam command="load" file="$(find tiago_move)/config/tiago_init_position.yaml"/>	
-	<node pkg="play_motion" type="run_motion" name="run_motion_init_pose" args="initial_position"/>	
-</launch>
