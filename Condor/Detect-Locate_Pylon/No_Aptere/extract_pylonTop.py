@@ -73,8 +73,8 @@ if __name__ == '__main__':
 
     # Path to post-training files of built_graph
     options = {
-        'metaLoad': 'built_graph/tiny-yolo-voc-pylone_phy.meta',
-        'pbLoad': 'built_graph/tiny-yolo-voc-pylone_phy.pb',
+        'metaLoad': 'darkflow/built_graph/tiny-yolo-voc-pylone_phy.meta',
+        'pbLoad': 'darkflow/built_graph/tiny-yolo-voc-pylone_phy.pb',
         'threshold': 0.3,
     }
 

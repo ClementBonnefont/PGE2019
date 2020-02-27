@@ -119,7 +119,7 @@ if __name__ == '__main__':
     # paper is 21cm wide
     KNOWN_WIDTH = 21
 
-    rect, box, height, width = find_marker("D:/PGE/ZED/Paper/Left/Image_left_1_1m.png")  # Image de 1m de distance
+    rect, box, height, width = find_marker("image_test/Paper/Left/Image_left_1_1m.png")  # Image de 1m de distance
     # F = (P x  D) / W
     # F: perceived focal length
     # P: the apparent width in pixels
@@ -175,7 +175,7 @@ if __name__ == '__main__':
     print(perfect_focalLength)
 
     # Show new perfect box:
-    image = cv2.imread("D:/PGE/ZED/Paper/Left/Image_left_1_1m.png")
+    image = cv2.imread("image_test/Paper/Left/Image_left_1_1m.png")
     nimage = cv2.drawContours(image, [perfect_box], -1, (255, 0, 0), 2)
     plt.imshow(nimage)
     plt.show()
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 
 
     # loop over the images
-    for imagePath in sorted(paths.list_images("D:/PGE/ZED/Paper/Left")):
+    for imagePath in sorted(paths.list_images("image_test/Paper/Left")):
         # load the image, find the marker in the image, then compute the
         # distance to the marker from the camera
         rect, box, height, width = find_marker(imagePath, show=0)

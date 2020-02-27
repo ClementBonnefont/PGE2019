@@ -8,8 +8,8 @@ le pylone, car avec les "trous" il y a des difficulté d'appariements et des zon
 De même la distance séparant le sol du pylone est tres réduit avec la maquette "1m20" ce qui nous laisse 
 une marge malgré tout assez fine.'''
 
-depth_measure_path = 'D:\PGE\ZED\ZED_Wall\DepthMeasure\Depth_measure_9.yml'
-image_left_path = 'D:\PGE\ZED\ZED_Wall\Images\Left\Image_left_9.png'
+depth_measure_path = 'image_test\photo_isolateur\DepthMeasure\Depth_measure_2.yml'
+image_left_path = 'image_test\photo_isolateur\Images\Left\Image_left_2.png'
 
 f = cv2.FileStorage(depth_measure_path, cv2.FILE_STORAGE_READ)
 a = f.getNode("ocv_depth_measure").mat()
@@ -23,7 +23,7 @@ depth_measure = np.array(a)
 depth_measure = np.where(np.logical_not(np.isnan(depth_measure)), depth_measure, 0)
 print(np.max(depth_measure))
 
-filter_pylon = (depth_measure < 6).astype(np.int)
+filter_pylon = (depth_measure < 4).astype(np.int)
 filter_nan = (depth_measure > 0).astype(np.int)
 print(filter_pylon)
 
@@ -38,7 +38,3 @@ img[:, :, 2] = (image[:, :, 2] * filter_complete[:, :])
 
 plt.imshow(img)
 plt.show()
-
-'''image2 = cv2.imread('D:/PGE/ZED/ZED_identification/Images/Depth/Depth_map_2.png')
-plt.imshow(image2)
-plt.show()'''
