@@ -1,0 +1,14 @@
+<launch>
+  <arg name="map_frame" default="map"/>
+  <arg name="odom_frame" default="odom"/>
+  <arg name="robot_frame" default="base_footprint"/>
+  <arg name="robot_prefix" default=""/>
+
+  <node pkg="robot_pose" type="robot_pose_node" name="robot_pose_publisher" output="screen">
+    <param name="map_frame" type="string" value="$(arg map_frame)" />
+    <param name="odom_frame" type="string" value="$(arg robot_frame)" />
+    <param name="robot_frame" type="string" value="$(arg robot_frame)" />
+    <param name="prefix" type="string" value="$(arg robot_prefix)" />
+  </node>
+</launch>
+

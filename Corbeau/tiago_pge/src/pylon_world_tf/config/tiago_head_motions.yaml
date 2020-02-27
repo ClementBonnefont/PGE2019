@@ -1,0 +1,11 @@
+play_motion:
+  motions:
+    head_look_around:
+      joints: [head_1_joint, head_2_joint]
+      points:
+      - positions: [0, -0.7]
+        time_from_start: 4.0
+      meta:
+        name: head_look_around
+        usage: demo
+        description: 'head_look_around'
