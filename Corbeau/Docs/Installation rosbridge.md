@@ -12,4 +12,5 @@ roslaunch rosbridge_server rosbridge_websocket.launch
 
 # 2. Côté PC
 Installer plugin sur Unity
+Suivre instructions du package Unity
 

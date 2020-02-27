@@ -20,3 +20,4 @@ roscore
 roslaunch bluefox2 single_node.launch device:=25001581
 rviz
 ```
+
