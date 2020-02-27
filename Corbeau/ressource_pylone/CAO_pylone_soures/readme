@@ -1,0 +1,55 @@
+#################################################
+#	OUTILS POUR L'INTEGRATION DE 		#
+#	LA  CAO DU PYLONE ELECTRIQUE		#
+#################################################
+#
+# Les fichiers .IGS et .STEP sont les CAO sources
+# fournies par Altran. 
+#
+# -----------------------------------------------
+# Gazebo se satisfait tres bien des fichiers au 
+# format .DAE, meme si d'autres formats sont 
+# utilisables. 
+#
+# -----------Conversion en DAE-------------------
+# Afin de transposer ce modele dans gazebo,
+# le fichier.IGS a ete utilisé : un unique 
+# modele englobant l'objet, la ou le .STER
+# etait decoupe en sous parties. 
+# 
+# Une fois ouvert dans un soft de CAO (freeCAD)
+# on peut exporter le fichier au format.DAE
+#
+# Toutefois l'echelle de tout soft CAO est le mm
+# la ou gazebo travaille en m. 
+# on obtient le fichier (pylone_test_collada.dae)
+# Il va donc falloir le convertir.
+#
+# -----------Mise a l'echelle--------------------
+# Si on importe tel quel le modele dans gazebo, 
+# le modele sera pivoté de -90 degree sur x,
+# et est 100 fois trop grand
+#
+# Pour tout remettre a l echelle, blender a ete 
+# utilise. On peut envisager d'utiliser tout 
+# autre soft de CAO pour les transformations.
+# 
+# Le modele transforme doit rester au format .dae
+# (pylone_echelle.dae)
+#
+# ------------Maillage du modèle STL-------------
+# Pour travailler sur la génération trajectoire  
+# a l'aide du modele CAO, on doit disposer de
+# fichiers mailles. La conversion en STL permet 
+# de raffiner le nombre de triangle du modele CAO. 
+#
+# Le fichier STL sera ensuite injecte en entree 
+# du script python "stl2polygon" convertissant un
+# fichier texte en ".m" type armada
+# (liste de polygone)
+# Le fichier '.m' ainsi genere permet d'alimenter
+# le programme de path planning d'Armada pour 
+# genere la trajectoire 
+#
+
+

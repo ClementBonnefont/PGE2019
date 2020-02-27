@@ -1,0 +1,103 @@
+#################################################
+#	OUTILS POUR L'INTEGRATION DE 		#
+#	LA  CAO DU PYLONE ELECTRIQUE		#
+#################################################
+#
+#
+#.
+#├── CAO_pylone_soures
+#│   ├── mesh_echelle_reduite_pylone.stl
+#│   ├── mesh_taille_reelle_pylone.stl
+#│   ├── pylone_echelle.dae
+#│   ├── Pylône.IGS
+#│   ├── Pylône.STEP
+#│   ├── pylone_test_collada.dae
+#│   └── readme
+#|
+#├── pylone_echelle
+#│   ├── material
+#│   │   └── texture_rouille.jpg
+#│   ├── meshes
+#│   │   └── pylone_echelle.dae
+#│   ├── model.config
+#│   ├── model_pylone_echelle_back.sdf
+#│   ├── model.sdf
+#│   └── readme
+#└── readme
+#
+# -------------------- CAO ----------------------
+# Contient les fichiers CAO utiles pour generer
+# les fichiers utilises par gazebo
+#
+# --------------- pylone_echelle ----------------
+# Ce repertoire peut directement etre injecte 
+# dans le dossier pal_gazebo_worlds qui est
+# lie a la simulation gazebo en cours.
+#
+# EXEMPLE
+#
+#pal_gazebo_worlds
+#├── launch
+#├── meshes # contient les meshs communs pour gazebo
+#├── models # contient les modeles importables dynamiquement dans gazebo
+#│   ├── arm_chair
+#│   ├── aruco_cube
+#│   ├── aruco_marker_250_6x6_1
+#│   ├── aruco_marker_250_6x6_2
+#│   ├── aruco_marker_250_6x6_3
+#│   ├── aruco_marker_250_6x6_4
+#│   ├── aruco_marker_6cm_238
+#│   ├── aruco_marker_6cm_26
+#│   ├── aruco_marker_6cm_582
+#│   ├── macrolink_small_table
+#│   ├── macrolink_table
+#│   ├── marker26_8cm
+#│   │   └── material
+#│   │       ├── scripts
+#│   │       └── textures
+#│   ├── pal_poster
+#│   │   └── material
+#│   │       ├── scripts
+#│   │       └── textures
+#│   ├── pylone_echelle ----------------> Le repertoire ajoute !!! 
+#│   │   ├── material
+#│   │   └── meshes
+#│   ├── reviews_table
+#│   │   └── meshes
+#│   ├── robocup_walls_70cm_doors
+#│   │   └── meshes
+#│   ├── rockin_camp
+#│   ├── slippery_patch
+#│   │   └── material
+#│   │       ├── scripts
+#│   │       └── textures
+#│   ├── sofa
+#│   │   └── meshes
+#│   ├── sprite
+#│   │   └── material
+#│   │       ├── scripts
+#│   │       └── textures
+#│   ├── sun
+#│   ├── table_0m8
+#│   ├── table_1m
+#│   ├── test2
+#│   │   └── meshes
+#│   ├── testing_room
+#│   ├── tv
+#│   │   └── meshes
+#│   ├── wall_with_reem_photo
+#│   │   └── material
+#│   │       ├── scripts
+#│   │       └── textures
+#│   └── wardrobe
+#│       └── meshes
+#├── src
+#├── test
+#├── urdf
+#│   └── chessboard
+#└── worlds # contient les mondes de gazebo 
+#
+# -------------- Insertion dynamique -----------------
+# Une fois dans gazebo le modele pylone_echelle
+# peut etre inmporte de maniere dynamique dans gazebo
+#

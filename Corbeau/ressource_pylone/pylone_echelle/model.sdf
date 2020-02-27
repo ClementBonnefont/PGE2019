@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="pylone_echelle">
+    <static>1</static>
+    <link name="link">
+
+      <collision name="colision1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://pylone_echelle/meshes/pylone_echelle.dae</uri>
+	    <scale> 1 1 1 </scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce />
+          <friction>
+            <ode />
+          </friction>
+          <contact>
+            <ode />
+          </contact>
+        </surface>
+      </collision>
+
+      <visual name="visual1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://pylone_echelle/meshes/pylone_echelle.dae</uri>
+	    <scale> 1 1 1 </scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://pylone_echelle/material/texture_rouille.jpg</uri>
+            <name>Texture_rouille</name>
+          </script>
+        </material>
+      </visual>
+
+      <velocity_decay>
+        <linear>0.000000</linear>
+        <angular>0.000000</angular>
+      </velocity_decay>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <gravity>1</gravity>
+    </link>
+  </model>
+</sdf>

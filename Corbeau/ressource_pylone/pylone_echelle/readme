@@ -1,0 +1,45 @@
+#################################################
+#	OUTILS POUR L'INTEGRATION DE 		#
+#	LA  CAO DU PYLONE ELECTRIQUE		#
+#################################################
+# Arborescence 
+#.
+#├── material
+#│   └── texture_rouille.jpg
+#├── meshes
+#│   └── pylone_echelle.dae
+#├── model.config
+#├── model_pylone_echelle_back.sdf
+#├── model.sdf
+#└── readme
+#
+# -----------Fichiers gazebo---------------------
+# Les obligatoires pour importer un modele dans
+# gazebo sont model.config et model.sdf
+# 
+# Le fichier .config contient toutes les infos 
+# de description du modele
+#
+# Le fichier .sdf contient la description du 
+# pylone au format xml
+#
+# -------------------Meshes---------------------
+# Contient le fichier CAO dont le lien est  
+# renseigne dans le fichier .sdf pour charger
+# le maillage
+#
+# -------------------Material-------------------
+# Contient le fichier de texture dont le lien 
+# est utilise dans le fichier .sdf 
+#
+# Une balise <visual> contient toutes les infos
+# relatives a l'affichage dans gazebo : 
+# position et taille par rapport au mesh choisi
+#
+# La balise <collision> renseigne les infos
+# utiles necessaires au moteur de collisions 
+# pour gerer la simulation
+#
+# -----------Backup du .sdf du pylone----------- 
+# Backup du fichier .sdf 
+#

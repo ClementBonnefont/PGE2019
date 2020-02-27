@@ -1,0 +1,53 @@
+Pour lancer la démonstration de TIAGo tournant autour de la maquette de pylone
+
+Ne pas oublier de source sur tiago_pge/devel/setup.bash (repertoire catkin du robot) 
+
+######### PRE-REQUIS ##########
+Tout activer dans le Webcommander de TIAGo : 
+==> http://10.68.0.1:8080/
+
+Lancer rqt dans un terminal avec le plugin "Dynamic Reconfigure" pour adapter des rosparam
+==> rqt
+
+Lancer le pluggin reconfigure
+
+Dans move_base/global_planner : 
+Décocher les "enabled" pour les deux onglets avec "obstacle_rgbd" dans leur nom
+
+Dans move_base/local_planner : 
+Décocher les "enabled" pour les deux onglets avec "obstacle_rgbd" dans leur nom
+
+Ces désactivations permettent d'empêcher le bras de créer un obstacle dans RVIZ quand il passe devant la caméra de la tête de TIAGo (cf tuto "desactivation_camera").
+
+Dans move_base/PalLocalPlanner :
+réduire "max_trans_vel" à 0.35
+réduire "acc_lim_theta" à 0.6
+réduire "acc_limit_trans" à 0.05
+
+########## TERMINAL 1 ##########
+==> roslaunch pylon_world_tf rviz_aruco.launch
+
+# Permet de lancer RVIZ et ARUCO pour poser le repère du pylone (Il faut que le QR soit identifié avec la pose /pylon_qr sur RVIZ)
+
+########## TERMINAL 2 ##########
+==> ssh pal@tiago-88c
+mdp : pal
+# Permet de se connecter au PC de TIAGo (nécessaire pour toutes les commandes moteurs)
+
+==> roslaunch pylon_world_tf plot_pylon_TF.launch
+# Permet de poser dans RVIZ le repère du pylone (Besoin de voir la pose /pylon_qr dans RVIZ) et les 8 points de la base mobile
+
+########## TERMINAL 3 ##########
+==> ssh pal@tiago-88c
+mdp : pal
+# Permet de se connecter au PC de TIAGo (nécessaire pour toutes les commandes moteurs).
+# Il faut impérativement lancer les commandes du bras et de la base mobile depuis un terminal connecté en SSH sur le robot pour des raisons de priorités.
+
+==> roslaunch tiago_move motion_pge
+# Permet de mettre le bras de TIAGo en position initiale avant de commancer l'inspection
+
+==> rosrun tiago_move follow_path
+# Permet de lancer le programme d'inspection
+
+ 
+

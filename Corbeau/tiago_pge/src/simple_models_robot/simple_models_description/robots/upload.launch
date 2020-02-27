@@ -1,0 +1,15 @@
+<launch>
+  <arg name="laser_model" default="false"/>
+  <arg name="robot"/>
+  <arg name="multi" default=""/>
+
+  <!-- Robot description -->
+  <param name="robot_description"
+      command="$(find xacro)/xacro.py --inorder
+              '$(find simple_models_description)/robots/robot.urdf.xacro'
+    laser_model:=$(arg laser_model)
+    robot:=$(arg robot)
+    $(arg multi)"/>
+
+</launch>
+
