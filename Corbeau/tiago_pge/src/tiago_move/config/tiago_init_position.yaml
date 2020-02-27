@@ -3,7 +3,7 @@ play_motion:
     initial_position:
       joints: [torso_lift_joint, arm_1_joint, arm_2_joint, arm_3_joint, arm_4_joint, arm_5_joint, arm_6_joint, arm_7_joint]
       points:
-      - positions: [0.29, 2.66, 0.41, -2.20, 0.32, -0.20, -0.60, -1.80]
+      - positions: [0.15, 1.28, 0.25, -1.76, 0.88, 2.07, -1.25, 1.64]
         time_from_start: 4.0
       meta:
         name: initial_position

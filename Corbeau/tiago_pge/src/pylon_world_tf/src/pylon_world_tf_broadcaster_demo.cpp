@@ -10,6 +10,7 @@ tf::Transform transform;
 int cpt_passage = 0;
 // Need to be global to the replace after the base moved
 moveit_msgs::CollisionObject co_pylon;
+//moveit_msgs::CollisionObject co_pylon_appro;
 ros::Publisher collision_object_publisher;
 
 void add_pylon_world() {
@@ -18,6 +19,7 @@ void add_pylon_world() {
 
 	// The id of the object is used to identify it.
 	co_pylon.id = "pylon_cao";
+	//co_pylon_appro.id = "pylon_cao_appro";
 
 	//Path where the .dae or .stl object is located
 	shapes::Mesh* m = shapes::createMeshFromResource("package://pylon_world_tf/config/pylone_echelle_low_res.dae", vectorScale);
@@ -36,12 +38,26 @@ void add_pylon_world() {
 	obj_pose.position.z = 0;
 	obj_pose.orientation = tf::createQuaternionMsgFromRollPitchYaw(0, 0, 0);
 
+	//APPROCHE
+	/*co_pylon_appro.header.frame_id = "/pylon_appro";
+	geometry_msgs::Pose obj_pose_appro;
+	obj_pose_appro.position.x = 0;
+	obj_pose_appro.position.y = 0;
+	obj_pose_appro.position.z = 0;
+	obj_pose_appro.orientation = tf::createQuaternionMsgFromRollPitchYaw(0, 0, 1.571);*/
+
 	// Add the mesh to the Collision object message 
 	co_pylon.meshes.push_back(mesh);
 	co_pylon.mesh_poses.push_back(obj_pose);
 	
 	co_pylon.operation = co_pylon.ADD;
 
+	// Add the mesh to the Collision object message APPROCHE
+	//co_pylon_appro.meshes.push_back(mesh);
+	//co_pylon_appro.mesh_poses.push_back(obj_pose_appro);
+	
+	//co_pylon_appro.operation = co_pylon_appro.ADD;
+	
 	// Publish the CAO to RVIZ
 	while(collision_object_publisher.getNumSubscribers() < 1)
 	{
@@ -52,6 +68,11 @@ void add_pylon_world() {
 	collision_object_publisher.publish(co_pylon); // Initial publish of the pylon CAO in RVIZ
 	// To move the CAO after the move of the mobile base
 	co_pylon.operation = co_pylon.MOVE;
+
+	//APPROCHE	
+	//collision_object_publisher.publish(co_pylon_appro); // Initial publish of the pylon CAO in RVIZ
+	// To move the CAO after the move of the mobile base
+	//co_pylon_appro.operation = co_pylon_appro.MOVE;
 }
 
 moveit_msgs::CollisionObject add_ground_world() {	
@@ -118,6 +139,7 @@ void baseGoalReached(const move_base_msgs::MoveBaseActionResult& msg) {
 			sleep_t.sleep();
 		}
 		collision_object_publisher.publish(co_pylon); // Re-pose of the pylon CAO in RVIZ
+		//collision_object_publisher.publish(co_pylon_appro); // Re-pose of the pylon CAO in RVIZ
 	}
 }
 
@@ -130,7 +152,8 @@ int main(int argc, char** argv){
 	transform.setOrigin(tf::Vector3(1.18, 0.611, 0));
 	const tf::Quaternion rpy= tf::createQuaternionFromYaw(0.69);
 	transform.setRotation(rpy);
-	ros::Subscriber sub_aruco = nh.subscribe("/aruco_single/pose", 1000, pylonPoseCallback);
+	// ARUCO not used during the demo
+	//ros::Subscriber sub_aruco = nh.subscribe("/aruco_single/pose", 1000, pylonPoseCallback);
 
 	ros::Subscriber sub_goal_reached = nh.subscribe("/move_base/result", 1000, baseGoalReached);
 	cpt_passage = 10;
@@ -138,13 +161,33 @@ int main(int argc, char** argv){
 	
 	moveit_msgs::CollisionObject co_ground = add_ground_world();
 
+	// Add a second broadcaster for the Demo approche
+	/*tf::Transform transform_appro;
+	transform_appro.setOrigin(tf::Vector3(-1.23, 1.41, 0.96));
+	const tf::Quaternion rpy_appro = tf::createQuaternionFromRPY(0.85, 1.571, 0.0);
+	transform_appro.setRotation(rpy_appro);	*/
+
 	ros::Rate rate(100.0); //Hertz
 	while (nh.ok()){
 		if(cpt_passage > 9) {
 			br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "/map", "/pylon"));
+			//br.sendTransform(tf::StampedTransform(transform_appro, ros::Time::now(), "/map", "/pylon_appro"));
 		}
 		ros::spinOnce();
 		rate.sleep();
 	}
+
+	// Remove the ground and the pylon COs on RVIZ
+	/*	
+	co_ground.operation = co_ground.REMOVE;
+	co_pylon.operation = co_pylon.REMOVE;
+	while(collision_object_publisher.getNumSubscribers() < 1) {
+		ROS_INFO_STREAM("Waiting for /collision_object topic");
+		ros::WallDuration sleep_t(0.5);
+		sleep_t.sleep();
+	}
+	collision_object_publisher.publish(co_ground);
+	collision_object_publisher.publish(co_pylon);*/
+
 	return 0;
 };

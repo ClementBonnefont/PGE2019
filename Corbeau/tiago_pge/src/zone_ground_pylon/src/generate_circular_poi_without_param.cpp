@@ -3,24 +3,33 @@
 
 using namespace zone_ground_pylon;
 
-std::vector <std::vector<double> > Generate_circular_poi::generate_circle(int numOfPoints, double radius, double posOriX, double posOriY, double posOriZ, double tilt  ){
+std::vector <std::vector<double> > Generate_circular_poi::generate_circle(int numOfPoints, double radius, double posOriX, double posOriY, double posOriZ, double tilt){
 
-  std::vector <std::vector<double> > points(3,std::vector<double>(numOfPoints));
+//int numOfPoints = 60;
+  //double radius = 50;
+  // draw the circle 
+  //double** points = 0;
+  //points = new double*[3];
+
+	/*for (int h = 0; h < 3 ; h++){
+		points[h] = new double[numOfPoints];
+		for (int n = 0; n < numOfPoints; n++){
+			points[h][n] = 0;
+		}
+	}*/
+
+    std::vector <std::vector<double> > points(3,std::vector<double>(numOfPoints));
 
 	float pas =  2*M_PI/numOfPoints;
 	int k = 0;
-	
-	ros::NodeHandle nh("~");
-	float hauteur_entre_pts, hauteur_pt1;
-	nh.getParam("/hauteur_entre_pts", hauteur_entre_pts);
-	nh.getParam("/hauteur_pt1", hauteur_pt1);
 
-	for (float angle=0; angle<2*M_PI; angle+=pas){
+	for (float angle=0; angle<(2*M_PI + tilt); angle+=pas){
 		points[0][k] = (double) points[0][k] + radius * cos(angle+tilt) + posOriX;
 		points[1][k] = (double) points[1][k] + radius * sin(angle+tilt) + posOriY;
-		points[2][k] = hauteur_entre_pts/numOfPoints * k + posOriZ + hauteur_pt1;
+		points[2][k] = 0.95/numOfPoints * k + posOriZ + .6;
 		k++;
 	}
+
 
 	for (int j = 0; j < 3; j++){
 		for (int i =0; i < numOfPoints; i++){
@@ -30,7 +39,7 @@ std::vector <std::vector<double> > Generate_circular_poi::generate_circle(int nu
 		std::cout << ("\n");
 	}
 
-	return points;
+    return points;
 }
 
 
@@ -69,9 +78,7 @@ std::array<double,4> Generate_circular_poi::get_pt_proche(std::vector <std::vect
     return pointEntreeCercle; 
 }
 
-std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector <std::vector<double> > cercle,
-                                    std::array<double,4> pointEntree, 
-                                    std::array<double,4> pointSortie){
+std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector <std::vector<double> > cercle, std::array<double,4> pointEntree, std::array<double,4> pointSortie){
     
 
     std::vector <std::vector<double> > chemin1(4,std::vector<double>()); // (1, std::vector<double>(3));
@@ -131,9 +138,7 @@ std::vector <std::vector<double> > Generate_circular_poi::bestChemin(std::vector
 }
 
 // genere la trajectoire entre deux points en passant par le cercle de traj
-std::vector <std::vector<double> > Generate_circular_poi::generate_traj_2pt_from_circle(
-            std::vector <std::vector<double> > cercle, std::array<double,3> pointOrigine,
-            std::array<double,3> pointGoal){
+std::vector <std::vector<double> > Generate_circular_poi::generate_traj_2pt_from_circle(std::vector <std::vector<double> > cercle, std::array<double,3> pointOrigine, std::array<double,3> pointGoal){
     
     std::array<double,4> ptEntree = Generate_circular_poi::get_pt_proche(cercle,pointOrigine);
     std::array<double,4> ptSortie = Generate_circular_poi::get_pt_proche(cercle,pointGoal);
