@@ -1,0 +1,22 @@
+READ ME:
+
+les models tensorflow sont sur : 
+
+https://github.com/tensorflow/models/tree/master/research
+
+! on utilise " Object Detection "
+
+
+afin d'utiliser le code de teste Faster RCNN
+
+
+changer les chemins suivants pour les conformés a votre machine:
+
+repertoire de test:
+
+PATH_TO_LABELS = '/home/golden/Documents/VOCdevkit/label.pbtxt'
+PATH_TO_CKPT = '/home/golden/Documents/VOCdevkit/output/frozen_inference_graph.pb'
+PATH_TO_TEST_IMAGES_DIR = '/home/golden/Documents/VOCdevkit/test/maq/'
+
+"testIso_{}" ( prefix du nom des images ):
+TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'testIso_{}.jpg'.format(i)) for i in range(15, 17) ]

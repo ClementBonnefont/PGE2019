@@ -1,0 +1,49 @@
+##################################################################
+SET UP YOUR MACHINE TO FOLLOW THE " FASTER_RCNN_tuto_by_golden "
+##################################################################
+
+
+A couple of installations need to be done in order to avoid compatibility issue.
+
+- set up a brand new virtual environment ( safety measure )
+pip install --upgrade pip
+
+sudo pip3 install -r Bureau/requirements-linux-python3.txt 
+cd Documents/
+mkdir my_tensorflow
+cd my_tensorflow
+python3 -m venv venv
+source venv/bin/activate
+
+sudo apt-get install python3-pip python3-dev
+
+-install tensorflow 
+pip install tensorflow==1.13.2
+
+-install keras
+sudo pip3 install keras
+
+-download and install labelIm
+https://tzutalin.github.io/labelImg/
+
+- install protocbuffer
+pip3 install protobuf-compiler
+
+sudo apt-get install libxml2-dev libxslt-dev python-dev
+pip install lxml
+pip install lxml==3.4.2
+
+
+pip install pycocotools
+sudo pip3 install matplotlib
+
+
+
+pip install jupyterlab
+cd Documents/models/research/object_detection
+jupyter notebook
+
+
+NB: Be ready to install other programs if needed.
+
+

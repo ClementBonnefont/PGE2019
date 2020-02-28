@@ -1,0 +1,134 @@
+####################################################################
+######################IMPORTANT#####################################
+
+CHECK OUT THE " Faster_RCNN_tuto_Computer_set_up_by_golden.txt "
+FILE FIRST, TO INSTALL THE REQUIRED SOFTWARE FOR THIS MANIPULATION.
+####################################################################
+
+
+
+RECAP ON THE TUTORIAL : TRAINING AND TESTING OF FASTER RCNN ON ONES OWN DATASET
+
+! this is highly inspired by Jasper Brown https://www.youtube.com/watch?v=9KmwZhTLV_s&t=712s
+! https://github.com/jaspereb/FasterRCNNTutorial
+
+! you need to follow exactly the entirety of the steps
+
+Create and setup all the repositories needed
+
++VOCdevkit
+    - copy/paste "faster_rcnn_resnet101_coco.config" ( modify the correspondant paths in it)
+    - create manually "label.pbtxt"
+    - create manually "pascal.record"
+    +test
+    +output
+    +VOC2012
+        +Annotations
+                -A bunch of .xml labels
+        +JPEGImages
+                -A bunch of .jpg images
+        +ImageSets
+                +Main
+                        -aeroplane_trainval.txt (This is just a list of the jpeg files without file extensions, the train.py script reads this file for all the images it is supposed to include.
+                        -trainval.txt (An exact copy of the aeroplane_trainval.txt)
+
+        +trainingConfig.config (training config file similar to https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
+        +Originals
+                      -all your original image files (just for easy access)
+
+
+in a repository outside of the arboresence previewsly mentioned clone the models from Tensorflow github
+
+- git clone https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
+
+#########ANNOTATION OF THE DATASET
+
+We wanna work on ".jpg" images, so if the dataset is not yet from this type, type in this commande line:
+
+mogrify -format jpg *.png
+rm *.png
+
+( in case you wanna remove the unneeded remaining .png files )
+
+Just for the sake of standardization, make sure to resize the data (images)
+
+cd .../JPEGImages
+for file in $PWD/*.jpg
+do
+convert $file -resize 717x600 $file
+done
+
+this renames the files by the order
+
+cd .../JPEGImages
+count=0
+for file in $PWD/*.xml  """""$PWD/*.jpg
+do
+mv $file _$count.xml	""""""_$count.jpg
+count=$((count+1))
+done
+
+Now it's time to label the image that will serve for training
+
+launch: ./labelImg.py
+-labelIm
+- select "save directory": Annotation
+- select "file directory": /JPEGImages
+do your annotations ( don't forget to set the name of the objet you wanna point out / annotated )
+
+".xml" files are generated inside Annotation
+
+cd ../Annotation
+
+for file in $PWD/*.xml
+do sed -i 's/>*png</jpg</g' $file
+done
+
+for file in $PWD/*.xml
+do sed -i 's/>JPEGImages</>VOC2012</g' $file
+done
+
+
+ls | grep .jpg | sed "s/.jpg//g" > aeroplane_trainval.txt
+cp aeroplane_trainval.txt trainval.txt
+mv *.txt ../ImageSets/Main/
+
+########## SETTING UP THE TRAINING PHASE
+
+cd Documents/models/research/
+
+protoc object_detection/protos/*.proto --python_out=.
+
+NB: make sure to convert repositories into package by runing the commande " pip install . " inside each package containing a "setup.py" file.
+This will prevent you from having import related issues.
+
+python object_detection/dataset_tools/create_pascal_tf_record.py -h
+
+python3 object_detection/dataset_tools/create_pascal_tf_record.py --data_dir=/home/golden/Documents/VOCdevkit --year=VOC2012 --output_path=/home/golden/Documents/VOCdevkit/pascal.record --label_map_path=/home/golden/Documents/VOCdevkit/label.pbtxt --set=trainval
+
+####TRAINING PHASE
+
+python object_detection/legacy/train.py -h
+
+python object_detection/legacy/train.py --train_dir=/home/golden/Documents/VOCdevkit/train --pipeline_config_path=/home/golden/Documents/VOCdevkit/faster_rcnn_resnet101_coco.config
+
+tensorboard --logdir=/home/golden/Documents/VOCdevkit/train     #Not sure of what this line does!
+
+
+python object_detection/export_inference_graph.py --input_type=image_tensor --pipeline_config_path=/home/golden/Documents/VOCdevkit/faster_rcnn_resnet101_coco.config --trained_checkpoint_prefix=/home/golden/Documents/VOCdevkit/train/model.ckpt-2988 --output_directory=/home/golden/Documents/VOCdevkit/output/
+
+NB: let it train for a couple of hours! I mean, untill the "los" approximates 0.03 or 0.02 it's up to you. Press ctrl C to stop the training.
+
+
+######## TESTINGS
+
+
+- take the ".ipynb" file and duplicate it to have your own version.
+
+launch jupyter notebook
+
+- jupyter notebook
+
+NB: I recommand modifying your note book file as in the main tuto ( again to avoid compatibility issues.)
+Just change the paths with the paths to your own files.
+
