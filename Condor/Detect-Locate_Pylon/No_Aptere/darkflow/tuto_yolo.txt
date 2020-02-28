@@ -1,0 +1,27 @@
+fichier de config yolo "cfg":
+utiliser comme base "tiny-yolo-voc.cfg"
+modif nb de class
+pour filters: (nb_class + 5)*5 
+
+
+pour les poids utiliser "tiny-yolo-voc.weights" dans "/bin"
+
+modifier le fichier "label.txt" en mettant le nom de chaque label de l'entrainement
+
+dans "/darkflow" le dossier, puis "defaults" on peut modifier les paramètres d'enregistremment par exemple
+
+
+Pour lancer l'entrainement (modifier les path): 
+python flow --model cfg/tiny-yolo.cfg --load bin/tiny-yolo-voc.weights --train --dataset "train/img" --annotation "train/annot" --gpu 1.0 
+
+
+Pour reprendre un entrainement:
+Meme commande que entrainement + "--load -1"
+python flow --model cfg/tiny-yolo.cfg --load bin/tiny-yolo-voc.weights --train --dataset "train/img" --annotation "train/annot" --gpu 1.0 --load -1
+
+
+Apres entrainement:
+python flow --model cfg/tiny-yolo.cfg --load -1 --savepb
+changer le cfg du training si besoin || remplacer le "-1" par le numéro du step à garder.
+
+Pour lancer la détection/prédiction : lancer "/extract.py". Bien sur le modifier avant afin de choisir les fichier du graph_built souhaité.
