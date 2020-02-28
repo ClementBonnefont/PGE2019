@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>pylone_phy_56.jpg</filename>
+	<path>D:\PGE\Code\darkflow\pylone_dataset\train\images\pylone_phy_56.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4640</width>
+		<height>3480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pylon_phy</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1703</xmin>
+			<ymin>1203</ymin>
+			<xmax>3049</xmax>
+			<ymax>1475</ymax>
+		</bndbox>
+	</object>
+</annotation>
